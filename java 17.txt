@@ -1,0 +1,217 @@
+1)two number addition getter setter 
+two number multiplication getter setter 
+two number division getter setter 
+two number modular getter setter 
+two number substraction getter setter 
+==
+class A {
+    private int a;
+    private int b;
+
+    void setA(int a, int b) {
+        this.a = a;
+        this.b = b;
+    }
+
+    int getA1() {
+        return a;
+    }
+
+    int getA2() {
+        return b;
+    }
+
+    void show() {
+        System.out.println(a + b);
+        System.out.println(a - b);
+        System.out.println(a * b);
+        System.out.println(a / b);
+        System.out.println(a % b);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        A p=new A();
+        p.setA(3, 3);
+        p.getA1();
+        p.getA2();
+        p.show();
+    }
+}
+
+
+------------------------------------------------
+class A
+constructor :two number addition
+
+class B
+constructor :two number multiplication
+
+class C
+constructor :two number division
+
+class D
+constructor :two number modular
+
+class Main 
+constructor :two number substraction 
+
+main method access
+===
+import java.util.*;
+public class Main {
+    Main() {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c=a+b;
+        int d=a*b;
+        int e=a/b;
+        int f=a%b;
+        int g=a-b;
+        System.out.println(c);
+        System.out.println(d);
+        System.out.println(e);
+        System.out.println(f);
+        System.out.println(g);
+    }
+
+    public static void main(String[] args) {
+        new Main();
+    }
+}
+
+------------------------------------------------
+class A
+constructor :two number addition
+method :no return and no argument 
+
+class B
+constructor :two number multiplication
+method :no return and  argument 
+
+class C
+constructor :two number division
+method : return and no argument 
+
+class D
+constructor :two number modular
+method : return and  argument 
+
+class Main 
+constructor :two number substraction 
+method :covariant return type 
+
+main method access 
+
+==
+import java.util.*;
+class A{
+     A() {
+        int a=6;
+        int b=5;
+        
+        
+        System.out.println(a+b);
+        
+    }
+}
+class B{
+    
+    B(int a,int b){
+       
+       System.out.println(a*b);
+    }
+}
+class C{
+    
+   private int a;
+    private int b;
+    C(){
+        this.a=6;
+        this.b=3;
+    }
+    
+    int show(){
+        return a/b;
+    }
+        
+      
+    
+    
+}
+class D{
+    private int a;
+    private int b;
+    D(int a,int b){
+        this.a=a;
+        this.b=b;
+    }
+    int show(){
+        return a%b;
+    }
+}
+
+public class Main {
+    
+   
+
+    public static void main(String[] args) {
+        new A();
+        new B(4,4);
+        C k= new C();
+        int result=k.show();
+        System.out.println(result);
+        D p= new D(189,22);
+        int answer=p.show();
+        System.out.println(answer);
+        
+    }
+}
+
+
+------------------------------------------------------------
+through instance variable :
+
+class A
+constructor :two number addition
+
+class B
+constructor :two number multiplication
+
+class C
+constructor :two number division
+
+class D
+constructor :two number modular
+
+class Main 
+constructor :two number substraction 
+
+main method access 
+===
+import java.util.*;
+public class Main {
+    int a=6;
+    int b=5;
+    Main() {
+        
+        int c=a+b;
+        int d=a*b;
+        int e=a/b;
+        int f=a%b;
+        int g=a-b;
+        System.out.println(c);
+        System.out.println(d);
+        System.out.println(e);
+        System.out.println(f);
+        System.out.println(g);
+    }
+
+    public static void main(String[] args) {
+        new Main();
+    }
+}
+-----------------------------------------------------------------------
+

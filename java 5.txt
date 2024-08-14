@@ -1,0 +1,436 @@
+1)C program to find out whether a given year is a leap year or not:
+== done 
+--------------------------------------------------------------------------------------------------------------------------------
+2)C program to convert temperature from Fahrenheit to Celsius and Celsius to Fahrenheit
+celsius 
+f---->c 
+fahrenheit
+c---f 
+== done
+---------------------------------------------------------------
+3)Check whether the trainge , square , reactanlge (area & volume)
+->input area /volume 
+area 
+traingle square rectangle 
+square ===
+==
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner(System.in);
+		System.out.println("for triangle enter t");
+		System.out.println("for rectangle enter r");
+		System.out.println("for square enter s");
+		char a= sc.next().charAt(0);
+		if(a=='t'){
+		    System.out.print(" enter base and height of triangle ");
+		    double b = sc.nextDouble();
+		    double c = sc.nextDouble();
+		    double d= 0.5*b*c;
+		    System.out.println("area of square= "+d);
+
+		}
+		else if(a=='r'){
+		    System.out.print(" enter length, breath and height of rectangle "); 
+		    double b = sc.nextDouble();
+		    double c = sc.nextDouble();
+		    double d = sc.nextDouble();
+		    double e =b*c;
+		    double f =b*c*d;
+		    System.out.println("area of rectangle= "+e);
+		    System.out.println("volumeof rectangle= "+f);
+		}
+		else if(a=='s'){
+		    System.out.print(" enter side of square "); 
+		    double b = sc.nextDouble();
+		    double c =b*b;
+		    double d =b*b*b;
+		    System.out.println("area of square= "+c);
+		    System.out.println("volumeof square= "+d);
+	}
+	   else {
+	       System.out.println("not valid");
+	   }
+}
+}
+
+------------------------------------------------------- 
+4)java program to check whether a character this  or not
+input =a =alpha 
+3 =this is a digit
+==
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner(System.in);
+		System.out.println("enter");
+	
+		char a= sc.next().charAt(0);
+		if(a>='a'|| a>='A'){
+		   
+		    System.out.println("this  is an alphabet ");
+}
+	
+	   else {
+	       System.out.println("this is a digit");
+	   }
+}
+}
+ 
+------------------
+5) C program to enter student marks and find percentage and grade
+A college has the following rules for the grading system:
+5 marks (grade + %)
+1. Below 25 – F
+2. 25 to 45 – E
+3. 45 to 50 – D
+4. 50 to 60 – C
+5. 60 to 80 – B 
+6. Above 80 – A
+===
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner(System.in);
+		System.out.println("enter marks of five subjects ");
+	
+		int a= sc.nextInt();
+		int b= sc.nextInt();
+		int c= sc.nextInt();
+		int d= sc.nextInt();
+		int e= sc.nextInt();
+		int g=a+b+c+d+e;
+		float f=g*100;
+		float h=f/500;
+		
+		System.out.println("your total numbers of marks are "+g);
+		System.out.println("your percentage is "+h);
+		if(h>=80){
+		    System.out.println("your grade is A ");
+		}
+		else if(h>=60 && h<80){
+		    System.out.println("your grade is B");
+		}
+			else if(h>=50 && h<60){
+		    System.out.println("your grade is C");
+		}
+			else if(h>=45 && h<50){
+		    System.out.println("your grade is D");
+		}
+			else if(h>=26&& h<45){
+		    System.out.println("your grade is E");
+		}
+		else{
+		     System.out.println("FAIIL!!!");
+		}
+		
+		
+	
+}
+}
+
+--------------------------------------------------
+6)Write a java program to accept the height of a person in centimeters and categorize the person according to their height.
+->meter ===>cm 
+mid 
+low 
+high 
+===
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner(System.in);
+		System.out.println("ENTER YOUR HEIGHT IN METERS ");
+	
+		double a = sc.nextDouble();
+		double b =a*100;
+		System.out.println("your height in cm = "+b);
+		if(b<160){
+		    System.out.println("your height lies under low segment");
+		}
+		else if(b>160 && b<=180){
+		    System.out.println("your height lies under mid segment");
+		}
+		else{
+		    System.out.println("your height lies under high segment");
+		}
+		
+	
+}
+}
+
+----------------------------------------------------
+7)Write a java program to read the roll no, name,fnname and marks of three subjects and calculate the total, percentage and division.
+Test Data :
+Input the Roll Number of the student :784
+student name : 
+fname:
+mname:
+address:
+contact:
+Input the marks of Physics, Chemistry and Computer Application : 70 80 90
+total: 
+precentage : % 
+division:
+==
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner(System.in);
+		System.out.println("ENTER YOUR NAME ");
+		char z = sc.next().charAt(0);
+		System.out.println("ENTER YOUR FATHERS NAME ");
+		char x = sc.next().charAt(0);
+		System.out.println("ENTER YOUR ROLLNO. ");
+		int q = sc.nextInt();
+	    System.out.println("enter marks of five subjects ");
+	
+		int a= sc.nextInt();
+		int b= sc.nextInt();
+		int c= sc.nextInt();
+		int d= sc.nextInt();
+		int e= sc.nextInt();
+		int g=a+b+c+d+e;
+		float f=g*100;
+		float h=f/500;
+		
+		System.out.println("your total numbers of marks are "+g);
+		System.out.println("your percentage is "+h);
+		if(h>=80){
+		    System.out.println("your grade is A ");
+		}
+		else if(h>=60 && h<80){
+		    System.out.println("your grade is B");
+		}
+			else if(h>=50 && h<60){
+		    System.out.println("your grade is C");
+		}
+			else if(h>=45 && h<50){
+		    System.out.println("your grade is D");
+		}
+			else if(h>=26&& h<45){
+		    System.out.println("your grade is E");
+		}
+		else{
+		     System.out.println("FAIIL!!!");
+		}
+		
+		
+	
+}
+}
+-------------------------------------------
+8) 5 number input 
+>40 
+average 
+3. 45 to 50 – D
+4. 50 to 60 – C
+5. 60 to 80 – B
+6. Above 80 – A 
+otherwise fail 
+====
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner(System.in);
+		System.out.println("enter 5 subjects numbers ");
+		int a= sc.nextInt();
+		int b= sc.nextInt();
+		int c= sc.nextInt();
+		int d= sc.nextInt();
+		int e= sc.nextInt();
+		int g=a+b+c+d+e;
+		float h=g/5;
+		
+		
+		System.out.println("your total numbers of marks are "+g);
+		System.out.println("your average is "+h);
+		if(h>=80){
+		    System.out.println("your grade is A ");
+		}
+		else if(h>=60 && h<80){
+		    System.out.println("your grade is B");
+		}
+			else if(h>=50 && h<60){
+		    System.out.println("your grade is C");
+		}
+			else if(h>=45 && h<50){
+		    System.out.println("your grade is D");
+		}
+		
+		else{
+		     System.out.println("FAIIL!!!");
+		}
+		
+		
+	
+}
+}
+
+-------------------------------
+
+-------------------------------------------
+12)
+electric city bill : 
+4 unit 
+40 
+1- 10 = 10% 
+11-20 =15% 
+21-40 =30% 
+50 =50% 
+
+output : 
+name:
+unit :3 
+amout 30 
+discout : 10% 
+total pay amount :
+====
+ import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner(System.in);
+	    System.out.println("ENTER YOUR  NAME ");
+	    char z = sc.next().charAt(0);
+		
+		System.out.println("ENTER YOUR UNIT CONSUMPTION ");
+		int q = sc.nextInt();
+		if(q<10){
+		    float a=q*10;
+		    float b=10*a;
+		    float c=b/100;
+		    float d=a-c;
+		    System.out.println("bill payable="+d);
+		}
+		
+		else if(q>=11 && q<=20){
+		    float a=q*10;
+		    float b=15*a;
+		    float c=b/100;
+		    float d=a-c;
+		     System.out.println("bill payable="+d);
+		}
+			else if(q>20 &&q<=40){
+			float a=q*10;
+		    float b=30*a;
+		    float c=b/100;
+		    float d=a-c;
+		     System.out.println("bill payable="+d);
+		}
+			else if(q>40){
+			float a=q*10;
+		    float b=50*a;
+		    float c=b/100;
+		    float d=a-c;
+		     System.out.println("bill payable="+d);
+		}
+		
+	
+}
+}
+----------------------------------------------------
+13) 
+retailer 
+customer 
+retailer : 
+1-15 peices =15% 
+16-30 =30% 
+31-50 =50% 
+
+output : 
+reailer name :asish kumar 
+peicies : 30 
+discount : 
+
+customer  : 
+1000 to 2000 -10% 
+100-1000 -5% 
+2000--3000 =15% 
+3000< 30% 
+sout("---------------------");
+output : 
+customer name : 
+contact number : 
+payment : 
+discout : 
+total payment 
+===import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner(System.in);
+	    System.out.println("ENTER YOUR  NAME ");
+	    String z = sc.next();
+	    System.out.println("ENTER YOUR  TYPE RETAILER OR CUSTOMER ");
+	    String name = sc.next();
+		
+	if(name.equals("retailer")){
+	    System.out.println("ENTER HOW MANY PICES YOU BUY");
+	    int a= sc.nextInt();
+	     System.out.println("ENTER PRICE OF PER PICES");
+	    int b= sc.nextInt();
+	    System.out.println(" NAME= "+z);
+	    System.out.println("TYPE = "+name);
+	    System.out.println("pices = "+a);
+	    System.out.println("price of per pices = "+b);
+	    int c=a*b;
+	    if(a<15){
+	        float d=15*c;
+	        float e=d/100;
+	        float f=c-e;
+	        System.out.println("amount to be paid after 15% discount ="+f);
+	    }
+	    else if(a>16 && a<30){
+	        float d=30*c;
+	        float e=d/100;
+	        float f=c-e;
+	        System.out.println("amount to be paid after 30% discount ="+f);  
+	    }
+	    else if(a>=30){
+	        float d=50*c;
+	        float e=d/100;
+	        float f=c-e;
+	        System.out.println("amount to be paid after 50% discount ="+f);  
+	    }
+	}
+	else if	(name.equals("customer")){
+	    System.out.println("ENTER PRICE OF ITEM PURCHASED");
+	    int a= sc.nextInt();
+	    System.out.println(" NAME= "+z);
+	    System.out.println("TYPE = "+name);
+	    System.out.println("price of total items = "+a);
+	    if(a>999 && a<2001){
+	        float d=10*a;
+	        float e=d/100;
+	        float f=a-e;
+	       System.out.println("amount to be paid after 10% discount ="+f); 
+	    }
+	    else if(a>=2001 && a<3001){
+	        float d=15*a;
+	        float e=d/100;
+	        float f=a-e;
+	       System.out.println("amount to be paid after 15% discount ="+f); 
+	    }
+	    else if(a>99 && a<1000){
+	        float d=5*a;
+	        float e=d/100;
+	        float f=a-e;
+	       System.out.println("amount to be paid after 5% discount ="+f);
+	    }
+	    else if(a>=3001){
+	        float d=30*a;
+	        float e=d/100;
+	        float f=a-e;
+	       System.out.println("amount to be paid after 30% discount ="+f); 
+	    }
+	}
+	   
+}
+}

@@ -1,0 +1,299 @@
+first way :
+
+class A
+	instance variable :
+	method :two number addition 
+==
+class A{
+    int a=5,b=7;
+    void show(){
+        System.out.println(a+b);
+    }
+}
+public class Main{
+    
+   
+
+	public static void main(String[] args) {
+		A k=new A();
+		k.show();
+		
+	}
+}
+
+
+
+
+
+class Main 
+main method 
+==
+public class Main{
+    int a=5,b=7;
+    void add(){
+        int c=a+b;
+        System.out.println(c);
+    }
+
+	public static void main(String[] args) {
+		Main p=new Main();
+		p.add();
+		
+	}
+}
+
+-----------------------------------------------------
+second way : 
+
+class A
+	instance variable a,b,c,d,e,f
+	method :two variable addition
+	method :two variable sub
+	method :two variable div
+
+class Main 
+	instance variable :
+	method :two number addition 
+
+main method :
+class A{
+    int a,b,c,d,e,f;
+    void show(int l, int k,int j,int h,int g,int s){
+        a=l;
+        b=k;
+        c=j;
+        d=h;
+        e=g;
+        s=f;
+        System.out.println(a+b+c+d+e+f);
+    }
+    void sub(int l, int k){
+        a=l;
+        b=k;
+        System.out.println(a-b);
+    }
+    void div(int l, int k){
+        a=l;
+        b=k;
+        System.out.println(a/b);
+    }
+    
+}
+public class Main{
+     int a,b;
+    void add(int l, int k){
+        a=l;
+        b=k;
+        int c=a+b;
+        System.out.println(c);
+}
+	public static void main(String[] args) {
+		A k=new A();
+		k.show(1,2,3,4,3,2);
+		k.sub(9,5);
+		k.div(6,2);
+		Main p=new Main();
+		p.add(4,5);
+	}
+}
+
+
+--------------------------------------------------------------
+third way : 
+
+class A
+	instance variable a,b,c,d,e,f
+	method :two variable addition
+	method :two variable sub
+	method :two variable div
+
+class Main 
+	instance variable :
+	method :two number addition 
+
+main method :
+===
+class A{
+    int a,b,c,d,e,f;
+    void show(int a, int b,int c,int d,int e,int f){
+        this.a=a;
+        this.b=b;
+        this.c=c;
+        this.d=d;
+        this.e=e;
+        this.f=f;
+        System.out.println(a+b+c+d+e+f);
+    }
+    void sub(){
+        
+        System.out.println(a-b);
+    }
+    void div(){
+        
+        System.out.println(a/b);
+    }
+    
+}
+public class Main{
+     int a,b;
+    void add(int a, int b){
+        this.a=a;
+        this.b=b;
+        int c=a+b;
+        System.out.println(c);
+}
+	public static void main(String[] args) {
+		A k=new A();
+		k.show(1,2,3,4,3,2);
+		k.sub();
+		k.div();
+		Main p=new Main();
+		p.add(4,5);
+	}
+}
+
+
+
+--------------------------------------------------------------
+getter setter method :
+all primitve data type with String 
+===
+class A{
+    private int a;
+    private String name;
+    private float f;
+    private char w;
+    
+    void setA(int a,String name,float f,char w){
+        this.a=a;
+        this.name=name;
+        this.f=f;
+        this.w=w;
+    }
+    int getA(){
+        return a;
+    }
+    String getA1(){
+        return name;
+        
+    }
+    float getA2(){
+        return f;
+    }
+    char getA3(){
+        return w;
+    }
+}
+public class Main{
+    
+
+	public static void main(String[] args) {
+		A k=new A();
+		k.setA(67,"loop",78.56f,'Z');
+		System.out.println(k.getA());
+		System.out.println(k.getA1());
+	    System.out.println(k.getA2());
+		System.out.println(k.getA3());
+	}
+}
+
+
+
+------------------------------------------------------------------
+user input :
+
+name
+fname
+nmame
+class
+address
+contact 
+roll_no 
+gender 
+marks 
+
+getter setter 
+====
+import java.util.*;
+
+class A{
+     private String qame; 
+     private String wame;
+     private String eame;
+     private int a;
+     private String rame;
+     private String tame;
+     private int b;
+    void setA(String qame,String wame,String eame, int a,String rame,String tame,int b){
+        this.qame=qame;
+        this.wame=wame;
+        this.eame=eame;
+        this.a=a;
+        this.rame=rame;
+        this.tame=tame;
+        this.b=b;
+    }
+    String getA(){
+        return qame;
+    }
+    String getA1(){
+        return wame;
+        
+    }
+    String getA2(){
+        return eame;
+    }
+    int getA3(){
+        return a;
+    }
+    String getA4(){
+        return rame;
+    }
+    String getA5(){
+        return tame;
+    }
+    int getA6(){
+        return b;
+    }
+}
+public class Main{
+    
+
+	public static void main(String[] args) {
+	     Scanner sc = new Scanner(System.in);
+
+	     System.out.println(" enter name");
+           String oname = sc.next();
+           System.out.println(" enter fname");
+           String fname = sc.next();
+           System.out.println(" enter mname");
+           String mname = sc.next();
+           System.out.println(" enter class");
+           int q = sc.nextInt();
+           System.out.println(" enter address");
+           String address = sc.next();
+           System.out.println(" enter gender");
+           String gender = sc.next();
+           System.out.println(" enter marks");
+           int m = sc.nextInt();
+           
+           
+           
+           
+		A k=new A();
+		k.setA(oname,fname,mname,q,gender,address,m);
+		System.out.println(k.getA());
+		System.out.println(k.getA1());
+	    System.out.println(k.getA2());
+		System.out.println(k.getA3());
+		System.out.println(k.getA4());
+		System.out.println(k.getA5());
+		System.out.println(k.getA6());
+	}
+}
+
+
+
+
+------------------------------------------------------------------
+

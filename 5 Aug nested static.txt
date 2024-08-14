@@ -1,0 +1,286 @@
+nested static 
+1)outer class non static and inner class static and method  static : 
+
+ class A{
+        static class B{
+            static  void show(){
+                 System.out.println("This is class A");
+             }
+        }
+ }
+  public class Main{
+       public static void main(String args[]){
+            A.B.show();
+       }
+  }
+==========================================================================
+
+2)outer class non  static and inner class non static and method  static : 
+
+class A {
+    class B {
+        static void show()
+        {
+            System.out.println("This is a static method in a non-static inner class.");
+        }
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        A.B.show(); 
+    }
+}
+
+ modifier 'static' is only allowed in constant variable declarations
+1 error
+
+==============================================================================
+
+3)outer class  non static and inner class static and method  non static : 
+
+
+
+class A {
+    static class B {
+        void show() {
+            System.out.println("This is a non-static method in a static inner class.");
+        }
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        A.B b = new A.B();
+        b.show();
+    }
+}
+=======================================================================================
+
+4)outer class  non static and inner class static and method  non static :
+
+
+class A {
+	static  class B {
+
+		void show() {
+			System.out.println("this is inner class static and method non static ");
+		}
+	}
+}   public class Main {
+	public static void main(String args[]) {
+		A.B p = new A.B();
+		p.show();
+	}
+}
+
+==========================================================================================
+5)
+class A 
+	static class B static method 
+	static class C static method 
+
+
+
+class A {
+    static class B {
+        static void methodB() {
+            System.out.println("This is a static method in static class B.");
+        }
+    }
+
+    static class C {
+        static void methodC() {
+            System.out.println("This is a static method in static class C.");
+        }
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        A.B.methodB();
+        A.C.methodC();
+    }
+}
+
+============================================================================================
+
+6)outer class  non static and inner class static and method  non static and instance variable static 
+
+
+   class A{
+        static class B{
+             static int a=10;
+                 void show(){
+                     System.out.println("This is a non-static method in a static inner class.");
+                     
+                     System.out.println("this is static variable = "+a);
+                 }
+             
+        }
+   }
+    public class Main{
+         public static void main(String args[]){
+              A.B p=new A.B();
+              p.show();
+         }  
+    }
+
+====================================================================================================
+
+7)
+outer class  non static and inner class static and method  non static and instance variable non static
+
+
+  class A{
+        static class B{
+             int a=10;
+             
+              void show(){
+                   System.out.println("This is non static method  and class B");
+                   System.out.println("This is non static variable  and class B = "+a);
+              }
+        }
+  }
+   public class Main{
+        public static void main(String args[]){
+             A.B p=new A.B();
+                 p.show();
+        }
+   }
+====================================================================================================== 
+
+8)
+outer class  non static and inner class non static and method  non static and instance variable non static 
+
+
+ class A{
+       class B{
+            int a=20;
+              void show(){
+                   System.out.println("This is non static method and class B");
+                   System.out.println("This is non static variable and class B  ="+a);
+              }
+       }
+  }
+   public class Main{
+        public static void main(String args[]){
+          A p = new A();
+        A.B k =p.new B();
+        k.show();
+        }
+   }
+============================================================================================================
+9)
+class A 
+	non static class B non static method 
+	non static class C static method 
+
+
+class A {
+    class B {
+        void nonStaticMethodB() {
+            System.out.println("This is a non-static method in non-static class B.");
+        }
+    }
+
+    class C {
+        static void staticMethodC() {
+            System.out.println("This is a static method in non-static class C.");
+        }
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        A a = new A();
+        A.B b = a.new B();
+        b.nonStaticMethodB();
+        A.C.staticMethodC();
+    }
+}
+
+
+                    ^
+  modifier 'static' is only allowed in constant variable declarations
+1 error
+
+===============================================================================================
+
+
+10)
+class A 
+	static class B static method and instance variable non static 
+
+	static class C static method and instance variable non static 
+
+
+
+
+class A {
+    static class B {
+        int nonStaticVariable = 10;
+        static void staticMethodB() {
+            System.out.println("This is a static method in static class B.");
+        }
+    }
+
+    static class C {
+        int nonStaticVariable = 20;
+        static void staticMethodC() {
+            System.out.println("This is a static method in static class C.");
+        }
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        A.B.staticMethodB();
+        System.out.println("Non-static variable in B: " + new A.B().nonStaticVariable);
+
+        A.C.staticMethodC();
+        System.out.println("Non-static variable in C: " + new A.C().nonStaticVariable);
+    }
+}
+
+================================================================================================
+
+
+11)		
+class A 
+	static class B static method and instance variable  static 
+
+	static class C static method and instance variable  static 
+
+
+
+
+class A {
+    static class B {
+        static int staticVariable = 10;
+        static void staticMethodB() {
+            System.out.println("This is a static method in static class B.");
+        }
+    }
+
+    static class C {
+        static int staticVariable = 20;
+        static void staticMethodC() {
+            System.out.println("This is a static method in static class C.");
+        }
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        A.B.staticMethodB();
+        System.out.println("Static variable in B: " + A.B.staticVariable);
+
+        A.C.staticMethodC();
+        System.out.println("Static variable in C: " + A.C.staticVariable);
+    }
+}
+
+
+
+--------------------------------------------------------------------

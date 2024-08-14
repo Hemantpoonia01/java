@@ -1,0 +1,275 @@
+return and no argument :
+
+return :int | char String float long double byte short Boolean
+
+----------------------------------------------------------
+ return and no argument :
+
+1)
+class A 
+even even method call ho (1--->100 even number)
+odd odd method call (check odd number ) 
+palindrome (palindrome)
+reverse (check reverse) 
+Armstrong (Armstrong)
+add (two number addition )
+sub (two number substraction)
+multi (two number multiply )
+
+class Main 
+main() :access 
+===
+import java.util.*;
+class A{
+    int add() {
+    int a = 2, b = 2, c;
+    c = a + b;
+    return c;
+  }
+  int sub(){
+      int a=7,b=6,c;
+      c = a - b;
+      return c;
+  }
+   int mul(){
+      int a=7,b=6,c;
+      c = a * b;
+      return c;
+  }
+  int even(){
+    
+     for (int i = 1 ; i <= 100; i++) {
+            if(i%2==0){
+                
+            System.out.print(i + " ");}
+        }
+return 0;
+  }
+   int odd(){
+    
+     for (int i = 1 ; i <= 100; i++) {
+            if(i%2==1){
+                
+            System.out.print(i + " ");}
+        }
+return 0;
+  }
+  
+  int armstrong(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("ENTER DIGIT");
+        int num=sc.nextInt();
+	   	     
+        int temp = num;
+        int  sum = 0;
+        for (int rem;num > 0;) {
+            rem = num % 10;
+            sum = sum + rem * rem * rem;
+            num = num / 10;
+        }
+        if (temp == sum) {
+            System.out.println("Armstrong Number");
+        } else {
+            System.out.println("Not");
+        }
+        return 0;
+  }
+  
+ int reverse(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("ENTER DIGIT");
+        int num=sc.nextInt();
+        int sum = 0;
+        for(int rem,e ;num > 0;){
+            rem = num % 10;
+            sum = sum  *10+rem;
+            num = num / 10;
+            
+        }
+          System.out.println("reversed number = "+sum);
+   return 0;
+    }
+  
+}
+public class Main {
+  
+ 
+  public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+          System.out.println("enter add or multi or odd or even or sub or reverse or armstrong");
+           String name = sc.next();
+         if (name.equals("add")){  
+    A k = new A();
+    System.out.println(k.add());
+         }
+         else  if (name.equals("sub")){  
+    A k = new A();
+    System.out.println(k.sub());
+         } 
+         else  if (name.equals("mul")){  
+    A k = new A();
+    System.out.println(k.mul());
+         } 
+         else  if (name.equals("odd")){  
+    A k = new A();
+    System.out.println(k.odd());
+         }
+         else  if (name.equals("even")){  
+    A k = new A();
+    System.out.println(k.even());
+         }
+         else  if (name.equals("armstrong")){  
+    A k = new A();
+    System.out.println(k.armstrong());
+         }
+         else  if (name.equals("reverse")){  
+    A k = new A();
+    System.out.println(k.reverse());
+         }
+  }
+}
+
+2)return and no argument :
+ 
+class Main :
+add() :two number addition
+sub() :two number subs
+div() :two number div
+multi() :two number multiplication
+mod() :two number modular 
+
+main() :
+all method call 
+==
+import java.util.*;
+public class Main {
+  
+ int add() {
+    int a = 2, b = 2, c;
+    c = a + b;
+    return c;
+  }
+  int sub(){
+      int a=7,b=6,c;
+      c = a - b;
+      return c;
+  }
+   int mul(){
+      int a=7,b=6,c;
+      c = a * b;
+      return c;
+  }
+  
+  int div(){
+      int a=7,b=6,c;
+      c = a / b;
+      return c;
+  }
+  int mod(){
+      int a=7,b=6,c;
+      c = a % b;
+      return c;
+  }
+ 
+  public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+          System.out.println(" enter add or multi or divide or even or sub or modulas");
+           String name = sc.next();
+         if (name.equals("add")){  
+    Main k = new Main();
+    System.out.println(k.add());
+         }
+         else  if (name.equals("sub")){  
+    Main k = new Main();
+    System.out.println(k.sub());
+         } 
+         else  if (name.equals("mul")){  
+    Main k = new Main();
+    System.out.println(k.mul());
+         } 
+         else  if (name.equals("div")){  
+    Main k = new Main();
+    System.out.println(k.div());
+         }
+         else  if (name.equals("mod")){  
+    Main k = new Main();
+    System.out.println(k.mod());
+         }
+        
+  }
+}
+
+3) return and no argument :
+
+class A :
+add() :two number addition
+sub() :two number subs
+div() :two number div
+multi() :two number multiplication
+mod() :two number modular 
+
+class Main :
+main() :
+all method call 
+
+==
+import java.util.*;
+class A{
+    int add() {
+    int a = 2, b = 2, c;
+    c = a + b;
+    return c;
+  }
+  int sub(){
+      int a=7,b=6,c;
+      c = a - b;
+      return c;
+  }
+   int mul(){
+      int a=7,b=6,c;
+      c = a * b;
+      return c;
+  }
+  
+  int div(){
+      int a=7,b=6,c;
+      c = a / b;
+      return c;
+  }
+  int mod(){
+      int a=7,b=6,c;
+      c = a % b;
+      return c;
+  }
+  
+}
+public class Main {
+  
+ 
+  public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+          System.out.println(" enter add or multi or divide or even or sub or modulas");
+           String name = sc.next();
+         if (name.equals("add")){  
+    A k = new A();
+    System.out.println(k.add());
+         }
+         else  if (name.equals("sub")){  
+    A k = new A();
+    System.out.println(k.sub());
+         } 
+         else  if (name.equals("mul")){  
+    A k = new A();
+    System.out.println(k.mul());
+         } 
+         else  if (name.equals("div")){  
+    A k = new A();
+    System.out.println(k.div());
+         }
+         else  if (name.equals("mod")){  
+    A k = new A();
+    System.out.println(k.mod());
+         }
+        
+  }
+}

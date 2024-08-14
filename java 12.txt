@@ -1,0 +1,114 @@
+class A 
+	method :addition 
+
+Main class access 
+==import java.util.*;
+class A {
+    void add() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the value of a ");
+        int a = sc.nextInt();
+        System.out.println("enter the value of b ");
+        int b = sc.nextInt();
+        int c = a + b;
+        System.out.println(c);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        A k = new A();
+        k.add();
+    }
+}
+-----------------------------------------------------------------
+class A 
+	method :addition 
+
+class B 
+	method :subs 
+
+class C
+	method :div  
+
+class D
+	method :mod 
+
+class E 
+	method :multi 
+
+Main class access 
+===
+import java.util.*;
+class A {
+    void add() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the value of a ");
+        int a = sc.nextInt();
+        System.out.println("enter the value of b ");
+        int b = sc.nextInt();
+        int c = a + b;
+        System.out.println(c);
+    }
+}
+class B{
+    void substract(){
+        Scanner sc = new Scanner (System.in);
+        System.out.println("enter the value of a");
+        int a=sc.nextInt();
+        System.out.println("enter the value of b");
+        int b=sc.nextInt();
+        int c=a-b;
+        System.out.println(c);
+    }
+}
+
+class C{
+    void multiply(){
+        Scanner sc = new Scanner (System.in);
+        System.out.println("enter the value of a");
+        int a=sc.nextInt();
+        System.out.println("enter the value of b");
+        int b=sc.nextInt();
+        int c=a*b;
+        System.out.println(c);
+    } 
+}
+class D{
+    void divide(){
+        Scanner sc = new Scanner (System.in);
+        System.out.println("enter the value of a");
+        int a=sc.nextInt();
+        System.out.println("enter the value of b");
+        int b=sc.nextInt();
+        int c=a/b;
+        System.out.println(c);
+    } 
+}
+class E{
+     void modulas(){
+        Scanner sc = new Scanner (System.in);
+        System.out.println("enter the value of a");
+        int a=sc.nextInt();
+        System.out.println("enter the value of b");
+        int b=sc.nextInt();
+        int c=a%b;
+        System.out.println(c);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        A k = new A();
+        k.add();
+        B l = new B();
+        l.substract();
+        C q =new C();
+        q.multiply();
+        D t= new D();
+        t.divide();
+        E y=new E();
+        y.modulas();
+    }
+}
+-----------------------------------------------------------------

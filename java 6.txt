@@ -1,0 +1,501 @@
+while loop: 
+1)1---->100 
+
+==public class Main{
+    public static void main (String[] args) {
+        int a=1;
+        while(a<=100){
+            System.out.print( " "+a);
+            a++;
+        }
+    }
+}
+---------------------------------------
+2)100--->1 
+
+==public class Main{
+    public static void main (String[] args) {
+        int a=100;
+        while(a>=1){
+            System.out.print( " "+a);
+            a--;
+        }
+    }
+}
+-----------------------------------------
+3)1---->100 even numbers print 
+==public class Main{
+    public static void main (String[] args) {
+        int a=1;
+        while(a<=100){
+            if(a%2==0){
+            System.out.print( " "+a);}
+            a++;
+        }
+    }
+}
+--------------------------------------------
+4) 100--->1 even number 
+==
+public class Main{
+    public static void main (String[] args) {
+        int a=100;
+        while(a>=1){
+            if(a%2==0){
+            System.out.print( " "+a);}
+            a--;
+        }
+    }
+}
+-------------------------------------------------
+5)1---->100 odd numbers 
+==public class Main{
+    public static void main (String[] args) {
+        int a=1;
+        while(a<=100){
+            if(a%2==1){
+            System.out.print( " "+a);}
+            a++;
+        }
+    }
+}
+--------------------------------------------------
+6)50---->500 number print 
+==public class Main{
+    public static void main (String[] args) {
+        int a=50;
+        while(a<=500){
+            System.out.print( " "+a);
+            a++;
+        }
+    }
+}
+-----------------------------------------
+7)500--->50 number print
+== public class Main{
+    public static void main (String[] args) {
+        int a=500;
+        while(a>=50){
+            System.out.print( " "+a);
+            a--;
+        }
+    }
+}
+------------------------------------------------
+8)50--->1000 even number 
+==public class Main{
+    public static void main (String[] args) {
+        int a=50;
+        while(a<=1000){
+            if(a%2==0){
+            System.out.print( " "+a);}
+            a++;
+        }
+    }
+}
+--------------------------------------------------
+9)user input 
+34-----67
+==
+import java.util.*;
+public class Main{
+    public static void main (String[] args) {
+        Scanner sc=new Scanner (System.in);
+        System.out.print("enter starting and ending points");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        
+        while(a<=b){
+            System.out.print( " "+a);
+            a++;
+        }
+    }
+}
+------------------------------------------------------
+10) random two 34-->67
+even number
+ ==
+import java.util.*;
+public class Main{
+    public static void main (String[] args) {
+        Scanner sc=new Scanner (System.in);
+        System.out.print("enter starting and ending points");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        
+        while(a<=b){
+            if(a%2==0){
+            System.out.print( " "+a);}
+            a++;
+        }
+    }
+}
+-----------------------------------------
+11) random two 34-->67
+oddd number 
+==
+import java.util.*;
+public class Main{
+    public static void main (String[] args) {
+        Scanner sc=new Scanner (System.in);
+        System.out.print("enter starting and ending points");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        
+        while(a<=b){
+            if(a%2==1){
+            System.out.print( " "+a);}
+            a++;
+        }
+    }
+}
+---------------------------------------------
+12)1--->10 sum (addition)
+== import java.util.*;
+public class Main{
+    public static void main (String[] args) {
+        Scanner sc=new Scanner (System.in);
+        System.out.print("enter starting and ending points");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int sum=0;
+        
+        while(a<=b){
+            sum=sum+a;
+            a++;
+            System.out.print( " "+sum);}
+            
+        }
+    }
+
+-----------------------------------------------------------
+13)2 table print 
+
+==
+import java.util.*;
+public class Main{
+    public static void main (String[] args) {
+        Scanner sc=new Scanner (System.in);
+        
+        int a=2;
+        
+        int b=10*a;
+        
+         while(a<=b){
+            if(a%2==0){
+            System.out.print( " "+a);}
+            a++;
+        }
+    }
+}
+
+------------------------------------------- 
+14)user input table 
+==import java.util.*;
+public class Main{
+    public static void main (String[] args) {
+        Scanner sc=new Scanner (System.in);
+        System.out.print("enter starting and ending points");
+        int a=sc.nextInt();
+        
+        int b=10*a;
+        
+         while(a<=b){
+            if(a%2==0){
+            System.out.print( " "+a);}
+            a++;
+        }
+    }
+}
+
+--------------------------------------------------
+15)2 3 4 5 6 7 8 9 10 table print (nested while)
+type2: 
+==
+import java.util.*;
+public class Main{
+    public static void main (String[] args) {
+        Scanner sc=new Scanner (System.in);
+        System.out.print("enter the table of what u want to print");
+        int a=sc.nextInt();
+        
+        int b=10*a;
+        if(a==2){
+         while(a<=b){
+            if(a%2==0){
+           
+            System.out.print( " "+a);}
+            a++;
+        }
+         System.out.print( "table of 2 ");
+    }
+    else if(a==3){
+         while(a<=b){
+            if(a%2==0){
+            
+                System.out.print( " "+a);
+            }
+            a++;
+        }
+        System.out.print( "table of 3 ");
+    }
+    else if(a==4){
+         while(a<=b){
+            if(a%2==0){
+            
+                System.out.print( " "+a);
+            }
+            a++;
+        }
+        System.out.print( "table of 4 ");
+    }
+    else if(a==5){
+         while(a<=b){
+            if(a%2==0){
+            
+                System.out.print( " "+a);
+            }
+            a++;
+        }
+        System.out.print( "table of 5 ");
+    }
+    else if(a==6){
+         while(a<=b){
+            if(a%2==0){
+            
+                System.out.print( " "+a);
+            }
+            a++;
+        }
+        System.out.print( "table of 6 ");
+    }
+    else if(a==7){
+         while(a<=b){
+            if(a%2==0){
+            
+                System.out.print( " "+a);
+            }
+            a++;
+        }
+        System.out.print( "table of 7 ");
+    }
+    else if(a==8){
+         while(a<=b){
+            if(a%2==0){
+            
+                System.out.print( " "+a);
+            }
+            a++;
+        }
+        System.out.print( "table of 8 ");
+    }
+    else if(a==9){
+         while(a<=b){
+            if(a%2==0){
+            
+                System.out.print( " "+a);
+            }
+            a++;
+        }
+        System.out.print( "table of 9 ");
+    }
+    else if(a==10){
+         while(a<=b){
+            if(a%2==0){
+            
+                System.out.print( " "+a);
+            }
+            a++;
+        }
+        System.out.print( "table of 10 ");
+    }
+    else {
+        System.out.print( "invalid ");
+    }
+    }
+}
+-------------------------------------------------------
+16)1-->100 (7 and 3 k multiple se divisible ho)
+==
+import java.util.*;
+public class Main{
+    public static void main (String[] args) {
+        Scanner sc=new Scanner (System.in);
+        
+        int a=1;
+         while(a<=100){
+            if(a%7==0 && a%3==0){
+            System.out.print(" "+a);
+                
+            }
+            a++;
+        }
+         System.out.println(" 7 and 3 k multiple se divisible hai ");
+    }
+}
+
+---------------------------------------------------
+17) divide number both 5 and 11 (1---->100)
+==
+import java.util.*;
+public class Main{
+    public static void main (String[] args) {
+        Scanner sc=new Scanner (System.in);
+        
+        int a=1;
+         while(a<=100){
+            if(a%5==0 && a%11==0){
+            System.out.print(" "+a);
+                
+            }
+            a++;
+        }
+         System.out.println(" 5 and 11 k multiple se divisible hai ");
+    }
+}
+
+--------------------------------------------------------
+18)100----1 (5 or 11) 
+==
+import java.util.*;
+public class Main{
+    public static void main (String[] args) {
+        Scanner sc=new Scanner (System.in);
+        
+        int a=100;
+         while(a>=1){
+            if(a%5==0 && a%11==0){
+            System.out.print(" "+a);
+                
+            }
+            a--;
+        }
+         System.out.println(" 5 and 11 k multiple se divisible hai ");
+    }
+}
+
+----------------------------------
+19)2 table oppsite print 
+==
+import java.util.*;
+public class Main{
+    public static void main (String[] args) {
+        Scanner sc=new Scanner (System.in);
+        
+        int a=2;
+        
+        int b=10*a;
+        
+         while(b>=a){
+            if(b%2==0){
+            System.out.print( " "+b);}
+            b--;
+        }
+    }
+}
+-------------------------------------------------
+20)100--->1 (n or m k multiple se divisible ho) 
+===
+import java.util.*;
+public class Main{
+    public static void main (String[] args) {
+        Scanner sc=new Scanner (System.in);
+        System.out.print("enter the multiples by which you wana divide");
+        int x=sc.nextInt();
+        int y=sc.nextInt();
+        int a=100;
+         while(a>=1){
+            if(a%x==0 && a%y==0){
+            System.out.print(" "+a);
+                
+            }
+            a--;
+        }
+         System.out.println(" 5 and 11 k multiple se divisible hai ");
+    }
+}
+-----------------------------------------------------
+21) 
+constant : 
+2 X 1 =2 
+==
+public class Main{
+    public static void main (String[] args) {
+        
+        
+        int a=2;
+        
+        int b=10*a;
+        int x=1;
+         while(a<=b){
+            if(a%2==0){
+                
+             System.out.print( " 2*"+x);
+             x++;
+            System.out.print( "= "+a);}
+            a++;
+            
+        }
+    }
+}
+user input : 
+9 X 1 = 9 
+==
+import java.util.*;
+
+public class Main{
+    public static void main (String[] args) {
+        Scanner sc=new Scanner (System.in);
+        System.out.print("enter the table of what u want to print");
+        int s=sc.nextInt();
+
+        
+        int a=s;
+        
+        int b=10*a;
+        int x=1;
+         while(a<=b){
+            if(a%s==0){
+             System.out.print( " "+s);   
+             System.out.print( "*"+x);
+             x++;
+            System.out.print( "= "+a );}
+            a++;
+            
+        }
+    }
+}
+
+-------------------------------------------------------------------------
+22)
+1--->100 even number sum 
+==
+public class Main{
+    public static void main (String[] args) {
+        int a=1;
+        int sum=0;
+        while(a<=100){
+            if(a%2==0){
+                sum=sum+a;
+            System.out.print( " "+sum);}
+            a++;
+        }
+    }
+}
+
+------------------
+23)
+1---->100 odd number ka sum 
+==
+public class Main{
+    public static void main (String[] args) {
+        int a=1;
+        int sum=0;
+        while(a<=100){
+            if(a%2==1){
+                sum=sum+a;
+            System.out.print( " "+sum);}
+            a++;
+        }
+    }
+}

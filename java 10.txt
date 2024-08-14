@@ -1,0 +1,659 @@
+switch paractice questions : 
+************************************
+user input 
+constant 
+************************************
+1)write a program to read a week day number and print weekday name using switch 
+eg 1 =>sunday 
+1 sunday 
+==
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	     Scanner sc=new Scanner (System.in);
+
+		System.out.println("enter digit to find out day of week");
+	 int a = sc.nextInt();
+	
+		switch(a)
+{
+	case 1:
+	{  System.out.println(" monday"); 
+	break;
+	}
+	case 2:
+	{  System.out.println(" tuesday"); 
+	break;
+	}
+	case 3:
+	{  System.out.println(" wednesday"); 
+	break;
+	}
+	case 4:
+	{  System.out.println(" thrusday"); 
+	break;
+	}
+	case 5:
+	{  System.out.println(" friday"); 
+	break;
+	}
+	case 6:
+	{  System.out.println(" saturday"); 
+	break;
+	}
+     case 7:
+	{  System.out.println("sunday"); 
+	break;
+	}
+	default :
+	{
+	System.out.println(" not a right digit");
+	}
+}
+	}
+}
+
+-----------------------------------------------------------------------
+2) 
+write a program to read gender (M/F) and print the corresponding gender using a switch statement 
+==
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	     Scanner sc=new Scanner (System.in);
+
+		System.out.println("enter the character ");
+        char a = sc.next().charAt(0);
+	
+		switch(a)
+{
+	case 'm':
+	{  System.out.println(" male"); 
+	break;
+	}
+	case 'f':
+	{  System.out.println(" felmale"); 
+	break;
+	}
+	case 'o':
+	{  System.out.println(" others"); 
+	break;
+	}
+	default :
+	{
+	System.out.println(" not a right character");
+	}
+}
+	}
+}
+
+--------------------------------------------------------------------------
+3)
+write a program to check whether the number is even or odd 
+type1: 1 even number 
+2 :odd number 
+==
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	     Scanner sc=new Scanner (System.in);
+
+		System.out.println("enter the character  for check even 1 for check odd 2");
+        int a = sc.nextInt();
+	
+		switch(a)
+{
+	case 1:{ 
+	    System.out.println("ENTER range");
+        int x=sc.nextInt();
+        int y=sc.nextInt();
+        for (int i = x ; i <= y; i++) {
+            if(i%2==0){
+                
+            System.out.print(i + " ");}
+        }
+	    
+	break;
+	}
+	case 2:{ 
+	     System.out.println("ENTER range");
+        int x=sc.nextInt();
+        int y=sc.nextInt();
+        for (int i = x ; i <= y; i++) {
+            if(i%2==1){
+                
+            System.out.print(i + " ");}
+        }
+	    
+	    
+	break;
+	}
+
+	default :{
+	System.out.println(" not a right character");
+	}
+}
+	}
+}
+
+type2: e =>even number 
+o=>odd number 
+==
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	     Scanner sc=new Scanner (System.in);
+
+		System.out.println("enter the character  for check even e for check odd o");
+        char a = sc.next().charAt(0);
+	
+		switch(a)
+{
+	case 'e':{ 
+	    System.out.println("ENTER range");
+        int x=sc.nextInt();
+        int y=sc.nextInt();
+        for (int i = x ; i <= y; i++) {
+            if(i%2==0){
+                
+            System.out.print(i + " ");}
+        }
+	    
+	break;
+	}
+	case 'o':{ 
+	     System.out.println("ENTER range");
+        int x=sc.nextInt();
+        int y=sc.nextInt();
+        for (int i = x ; i <= y; i++) {
+            if(i%2==1){
+                
+            System.out.print(i + " ");}
+        }
+	    
+	    
+	break;
+	}
+
+	default :{
+	System.out.println(" not a right character");
+	}
+}
+	}
+}
+--------------------------------------------------------------------------------------------------
+4) 
+write a program to create a simple calculator 
+a b + 
+a+b 
+===
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	     Scanner sc=new Scanner (System.in);
+
+		System.out.println("enter the character  for add a  substraction s multiplication m division d modulas f");
+        char a = sc.next().charAt(0);
+
+	
+		switch(a)
+{
+	case 'a':{ 
+	    System.out.println("ENTER digits");
+        int x=sc.nextInt();
+        int y=sc.nextInt();
+       int c=x+y;
+                
+            System.out.print(c + " ");
+        
+	    
+	break;
+	}
+	case 's':{ 
+	     System.out.println("ENTER digits");
+        int x=sc.nextInt();
+        int y=sc.nextInt();
+       int c=x-y;
+                
+            System.out.print(c + " ");
+        
+	    
+	    
+	break;
+	}
+		case 'm':{ 
+	     System.out.println("ENTER digits");
+        int x=sc.nextInt();
+        int y=sc.nextInt();
+       int c=x*y;
+                
+            System.out.print(c + " ");
+        
+	    
+	    
+	break;
+	}
+		case 'd':{ 
+	     System.out.println("ENTER digits");
+        int x=sc.nextInt();
+        int y=sc.nextInt();
+       int c=x/y;
+                
+            System.out.print(c + " ");
+        
+	    
+	    
+	break;
+	}
+		case 'f':{ 
+	     System.out.println("ENTER digits");
+        int x=sc.nextInt();
+        int y=sc.nextInt();
+       int c=x%y;
+                
+            System.out.print(c + " ");
+        
+	    
+	    
+	break;
+	}
+
+	default :{
+	System.out.println(" not a right character");
+	}
+}
+	}
+}
+-----------------------------------------------------------------------------
+5) 
+write a program to check whether a person is eligible or not for vote 
+==
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	     Scanner sc=new Scanner (System.in);
+
+		System.out.println("enter your age");
+        int a = sc.nextInt();
+        int res = a >= 18?1:0;
+	
+		switch(res){
+	case 1:{ 
+	    System.out.println("valid for voting");
+       
+	    
+	break;
+	}
+	case 0:{ 
+	     System.out.println("not valid for voting");
+       
+	    
+	    
+	break;
+	}
+	
+	default :{
+	System.out.println(" not valid");
+	}
+}
+	}
+}
+
+----------------------------------------------------------------------------------------------------
+6)
+write a program to check month ? 
+12 month 
+==
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	     Scanner sc=new Scanner (System.in);
+
+		System.out.println("enter digit to find out month of tha year");
+	 int a = sc.nextInt();
+	
+		switch(a)
+{
+	case 1:
+	{  System.out.println(" january"); 
+	break;
+	}
+	case 2:
+	{  System.out.println(" ferbuary"); 
+	break;
+	}
+	case 3:
+	{  System.out.println(" march"); 
+	break;
+	}
+	case 4:
+	{  System.out.println(" aprail"); 
+	break;
+	}
+	case 5:
+	{  System.out.println(" may"); 
+	break;
+	}
+	case 6:
+	{  System.out.println(" june"); 
+	break;
+	}
+     case 7:
+	{  System.out.println("july"); 
+	break;
+	}
+	 case 8:
+	{  System.out.println("august"); 
+	break;
+	}
+	 case 9:
+	{  System.out.println("september"); 
+	break;
+	}
+	 case 10:
+	{  System.out.println("octuber"); 
+	break;
+	}
+	 case 11:
+	{  System.out.println("november"); 
+	break;
+	}
+	 case 12:
+	{  System.out.println("december"); 
+	break;
+	}
+
+	default :
+	{
+	System.out.println(" not a right digit");
+	}
+}
+	}
+}
+--------------------------------------------------------------------------------------------------
+7)
+a p e o f r l 
+a=armstrong number 
+p =prime number 
+e =even 
+o =odd 
+f =factorial 
+r =reverse 
+l =fibonacci 
+t =perfect number 
+n =neon number 
+w =leap year 
+s =swap one way 
+v =vowel and consonant 
+==
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	     Scanner sc=new Scanner (System.in);
+
+		System.out.println("a=armstrong number  e =even o =odd f =factorial r =reverse l =fibonacci t =perfect number n =neon number w =leap year s =swap one way v =vowel and consonant ");
+	 char m = sc.next().charAt(0);
+	
+		switch(m)
+{
+	case 'a':
+	{  
+	    System.out.println("ENTER DIGIT");
+        int num=sc.nextInt();
+	   	     
+        int temp = num;
+        int  sum = 0;
+        for (int rem;num > 0;) {
+            rem = num % 10;
+            sum = sum + rem * rem * rem;
+            num = num / 10;
+        }
+        if (temp == sum) {
+            System.out.println("Armstrong Number");
+        } else {
+            System.out.println("Not");
+        }
+
+	    
+	break;
+	}
+	
+	case 'e':
+	{  
+	   System.out.println("ENTER range");
+        int x=sc.nextInt();
+        int y=sc.nextInt();
+        for (int i = x ; i <= y; i++) {
+            if(i%2==0){
+                
+            System.out.print(i + " ");}
+        }
+ 
+	    
+	break;
+	}
+	case 'o':
+	{  
+	    System.out.println("ENTER range");
+        int x=sc.nextInt();
+        int y=sc.nextInt();
+        for (int i = x ; i <= y; i++) {
+            if(i%2==1){
+                
+            System.out.print(i + " ");}
+        }
+
+	break;
+	}
+	case 'f':
+	{  
+	      System.out.println("ENTER number");
+        int number=sc.nextInt();
+            int i,fact=1;  
+               
+           for(i=1;i<=number;i++){    
+           fact=fact*i;    
+  }    
+  System.out.println("Factorial of "+number+" is: "+fact); 
+	break;
+	}
+	case 'r':
+	{  
+	     System.out.println("ENTER DIGIT");
+        int num=sc.nextInt();
+        int sum = 0;
+        for(int rem,e ;num > 0;){
+            rem = num % 10;
+            sum = sum  *10+rem;
+            num = num / 10;
+            
+        }
+          System.out.println("reversed number = "+sum);   
+          
+
+	break;
+	}
+     case 'l':
+	{ 
+	    System.out.println("ENTER DIGIT");
+	   	     int count=sc.nextInt();
+                 int n1=0,n2=1,n3,i;  
+                 System.out.print(n1+" "+n2);  
+  
+                  for(i=2;i<count;++i) {  
+                n3=n1+n2;  
+                System.out.print(" "+n3);  
+                n1=n2;  
+                n2=n3;  
+                   }
+
+	break;
+	}
+	 case 't':
+	{ 
+	     System.out.println("ENTER DIGIT");
+        int num=sc.nextInt();
+        int sum = 0;
+        for(int a=1;a<= num;a++) {
+           
+        if(num % a  == 0){
+            sum= sum +  a;
+            
+
+        }
+           }
+        if (sum == num) {
+            System.out.println("Perfect Number");
+        } else {
+            System.out.println("Not");
+        }
+
+	    
+	break;
+	}
+	 case 'n':
+	{ 
+	    System.out.println("ENTER DIGIT");
+        int num=sc.nextInt();
+         int p = num*num;
+        int temp = p;
+        int sum = 0;
+       for(int rem;p > 0;) {
+            rem = p % 10;
+            sum = sum +rem;
+            p = p / 10;
+        }
+        if (num== sum) {
+            System.out.println("neon number");
+        } else {
+            System.out.println("Not");
+        }
+ 
+	break;
+	}
+	 case 'w':
+	{  
+	     System.out.print("enter days in year ");
+     int a=sc.nextInt();
+        if(a%4==0){
+            System.out.println("leap year");
+        }
+       else{
+           System.out.println("not a leap year");
+       }
+
+	break;
+	}
+	case 's':
+	{  System.out.println("ENTER DIGIT 1");
+        int a=sc.nextInt();
+        System.out.println("ENTER DIGIT 2");
+        int b=sc.nextInt();
+	    int c;
+	    c=a;
+	    a=b;
+	    b=c;
+	     System.out.println("DIGIT 1 "+a);
+	      System.out.println("DIGIT 2 "+b);
+	break;
+	}
+	case 'v':
+	{  
+	    System.out.println("enter character ");
+       char a = sc.next().charAt(0);
+      
+        if (a=='a' || a=='e' || a=='i' || a=='o' ||a=='u') {
+            
+            System.out.println("vowel");
+      
+        }
+        else{
+            System.out.println("constant");
+        }
+ 
+	break;
+	}
+
+
+	default :
+	{
+	System.out.println(" not a right character");
+	}
+}
+	}
+}
+---------------------------------------------------------------------------------------------------------
+8)
+1 -->10 cases 
+as u wish patterns 
+==
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	     Scanner sc=new Scanner (System.in);
+
+		System.out.println("enter digit to find random game name to play on sunday");
+	 int a = sc.nextInt();
+	
+		switch(a)
+{
+	case 1:
+	{  System.out.println(" chess"); 
+	break;
+	}
+	case 2:
+	{  System.out.println(" cricket"); 
+	break;
+	}
+	case 3:
+	{  System.out.println(" ludo"); 
+	break;
+	}
+	case 4:
+	{  System.out.println(" table tennis"); 
+	break;
+	}
+	case 5:
+	{  System.out.println(" badminton"); 
+	break;
+	}
+	case 6:
+	{  System.out.println(" vollyball"); 
+	break;
+	}
+     case 7:
+	{  System.out.println("throwball"); 
+	break;
+	}
+	 case 8:
+	{  System.out.println("football"); 
+	break;
+	}
+	 case 9:
+	{  System.out.println("valorant"); 
+	break;
+	}
+	 case 10:
+	{  System.out.println("need for speed"); 
+	break;
+	}
+
+
+	default :
+	{
+	System.out.println(" not a right digit");
+	}
+}
+	}
+}
+----------------------------------------------------------------------------------------------------------------------------------

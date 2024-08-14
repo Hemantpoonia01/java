@@ -1,0 +1,204 @@
+1)voter id 
+=>user input 
+==
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	     Scanner sc=new Scanner (System.in);
+		System.out.println("enter age");
+		int a=sc.nextInt();
+		String age=(a>=18)?"valid for voting":"not valid for voting";
+		System.out.println(age);
+	}
+}
+
+2)one number max a>10 
+one number : 
+==
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	     Scanner sc=new Scanner (System.in);
+		System.out.println("enter digit");
+		int a=sc.nextInt();
+		String name = (a > 10) ? a+" is greater than 10" : a+" is not greater than 10";
+        System.out.println(name);
+	}
+}
+
+3)two number max a b 
+a ya b dono mey se bda konsa hey 
+==
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	     Scanner sc=new Scanner (System.in);
+		System.out.println("enter numbers");
+		int a=sc.nextInt();
+		int b=sc.nextInt();
+		String name = (a > b) ? a+" is greater than "+b : b+" is not greater than "+a;
+        System.out.println(name);
+	}
+}
+
+4)three number max a b c 
+tenno mey se konsa badha hey 
+==
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	     Scanner sc=new Scanner (System.in);
+		System.out.println("enter numbers");
+		int a=sc.nextInt();
+		int b=sc.nextInt();
+		int c=sc.nextInt();
+		 String pr = (a > b && a > c) ? a+" is greater" : (b > a && b > c) ? b+" is greater" : c+" is greater";
+        System.out.println(pr);
+	}
+}
+
+5)five number max abcde
+==
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	     Scanner sc=new Scanner (System.in);
+		System.out.println("enter numbers");
+		int a=sc.nextInt();
+		int b=sc.nextInt();
+		int c=sc.nextInt();
+		int d=sc.nextInt();
+		int e=sc.nextInt();
+		 String pr = (a > b && a > c && a>d && a>e) ? a+" is greater" : (b > a && b > c && b>d && b>e) ? b+" is greater" :(c > a && c > b && c>d && c>e) ? c+" is greater":(d > a && d > b && d>c && d>e) ? d+" is greater": e+"is greater";
+        System.out.println(pr);
+	}
+}
+
+6) user 
+-9 negative integer 
+5 positive integer 
+0 =zero 
+==
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	     Scanner sc=new Scanner (System.in);
+		System.out.println("enter numbers");
+		int a=sc.nextInt();
+	
+		 String pr =(a<0)? a+("number is negative"):(a==0)? a+("number is zero"):a+("number is positive");
+        System.out.println(pr);
+	}
+}
+
+7) vowel and consonat 
+->a e i o u vowel 
+consonant 
+==
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	     Scanner sc=new Scanner (System.in);
+		System.out.println("enter numbers");
+		char a = sc.next().charAt(0);
+	
+		 String pr =(a=='a'||a=='e'|| a=='i'||a=='o'||a=='u')? a+(" is vowal"):a+(" is constant");
+        System.out.println(pr);
+	}
+}
+
+
+8)divisible 5 and 11 
+	a)num dono se divide ho jb process ho 
+	b)num kisi se bhi divide ho jb process ho 
+==
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	     Scanner sc=new Scanner (System.in);
+		System.out.println("enter numbers");
+		int a = sc.nextInt();
+	
+		 String pr =(a%5==0 && a%11==0)? a+(" divisible by both 5 and 11"):(a%5==0 || a%11==0)? a+(" divisible by one among  5 and 11"):a+(" not  divisible by both among  5 and 11");
+        System.out.println(pr);
+	}
+}
+
+
+9)m =you are 
+f = female 
+other
+==
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	     Scanner sc=new Scanner (System.in);
+		System.out.println("enter charcter");
+		char a = sc.next().charAt(0);
+	
+		 String pr =(a=='m')? (" male"):(a=='f')? (" female"):(a=='o')? (" others"):("not valid input");
+        System.out.println(pr);
+	}
+}
+
+10)number 
+1 =>sunday 
+2 =>monday 
+3 =>tuesday 
+==
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	     Scanner sc=new Scanner (System.in);
+		System.out.println("enter numbers");
+		int a = sc.nextInt();
+	
+		 String pr =(a==1)?("monday "):(a==2)?(" tuesday"):(a==3)?("wednesday "):(a==4)?(" thrusday"):(a==5)?("friday "):(a==6)?("saturday "):(a==7)?("sunday "):(" not  a week day");
+        System.out.println(pr);
+	}
+}
+
+11)ser number 
+check number :even odd 
+==
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	     Scanner sc=new Scanner (System.in);
+		System.out.println("enter numbers");
+		int a = sc.nextInt();
+	
+		 String pr =(a%2==0)?a+" is even number":a+" is odd number";
+        System.out.println(pr);
+	}
+}
+
+12)char match 
+a =>apple 
+b :ball 
+c :cat 
+not match 
+==
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	     Scanner sc=new Scanner (System.in);
+		System.out.println("enter numbers");
+		char a = sc.next().charAt(0);
+	
+		 String pr =(a=='a')?"apple":(a=='b')?" ball":(a=='c')?"cat":"not match";
+        System.out.println(pr);
+	}
+}

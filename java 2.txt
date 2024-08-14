@@ -1,0 +1,249 @@
+hello world 
+==
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the word");
+        String a= sc.next();
+        System.out.println(a);
+        
+    }
+} 
+-----------------------------------------------
+five friends name 
+==
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("friend 1:");
+        String a= sc.next();
+        System.out.println(a);
+        System.out.println("friend 2:");
+        String b= sc.next();
+        System.out.println(b);
+        System.out.println("friend 3:");
+        String c= sc.next();
+        System.out.println(c);
+        System.out.println("friend 4:");
+        String d= sc.next();
+        System.out.println(d);
+        System.out.println("friend 5:");
+        String e= sc.next();
+        System.out.println(e);
+        
+    }
+} 
+-----------------------------
+five fav fruits name lines 
+==
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("five friuts name list enter");
+        String a= sc.nextLine();
+        System.out.println(a);
+       
+    }
+} 
+------------------------
+five fav food name 
+==import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("fruit 1:");
+        String a= sc.next();
+        System.out.println(a);
+        System.out.println("fruit 2:");
+        String b= sc.next();
+        System.out.println(b);
+        System.out.println("fruit 3:");
+        String c= sc.next();
+        System.out.println(c);
+        System.out.println("fruit 4:");
+        String d= sc.next();
+        System.out.println(d);
+        System.out.println("fruit 5:");
+        String e= sc.next();
+        System.out.println(e);
+        
+    }
+} 
+---------------------
+five fav country name lines 
+==import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("counry 1 and its slogan");
+        String a= sc.nextLine();
+       
+        System.out.println("counry 2 and its slogan");
+        String b= sc.nextLine();
+        
+        System.out.println("counry 3 and its slogan");
+        String c= sc.nextLine();
+        
+        System.out.println("counry 4 and its slogan");
+        String d= sc.nextLine();
+        
+        System.out.println("counry 5 and its slogan");
+        String e= sc.nextLine();
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(c);
+        System.out.println(d);
+        System.out.println(e);
+        
+        
+       
+    }
+} 
+-------------------------
+five fav city name 
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("city 1:");
+        String a= sc.next();
+        System.out.println(a);city
+        System.out.println("city 2:");
+        String b= sc.next();
+        System.out.println(b);
+        System.out.println("city 3:");
+        String c= sc.next();
+        System.out.println(c);
+        System.out.println("city 4:");
+        String d= sc.next();
+        System.out.println(d);
+        System.out.println("city 5:");
+        String e= sc.next();
+        System.out.println(e);
+        
+    }
+} 
+--------------------------------------------------
+constant : 
+all primitive data type :print krna hey 
+==
+import java.util.*;
+
+public class Main
+{
+  
+public static void main (String[]args)
+  {
+	
+Scanner sc = new Scanner (System .in);
+        
+        System.out.println("enter the value of boolean");
+        boolean a =sc.nextBoolean();
+        System.out.println(a);
+
+        // int :integer
+        System.out.println("enter the value of integer");
+        int b =sc.nextInt();
+        System.out.println(b);
+
+        // byte :store integer value :-128 to 127
+        System.out.println("enter the value of byte");
+        byte c = sc.nextByte();
+        System.out.println(c);
+
+        // short : -32,768 to 32,767
+        System.out.println("enter the value of short");
+        short d = sc.nextShort();
+        System.out.println(d);
+
+        // char :a--z
+        System.out.println("enter the value of char");
+        char e = sc.next().charAt(0);
+        System.out.println(e);
+
+        // float :
+        System.out.println("enter the value of float");
+        float f =sc.nextFloat();
+        System.out.println(f);
+
+        // double
+        System.out.println("enter the value of double");
+        double g = sc.nextDouble();
+        System.out.println(g);
+    }
+}
+------------------------------------------------
+
+different code 
+3.4
+==
+import java.util.*;
+
+public class Main
+{
+  
+public static void main (String[]args)
+  {
+	
+Scanner sc = new Scanner (System .in);
+        
+     
+        System.out.println("enter the value of float");
+        float f =sc.nextFloat();
+        System.out.println(f);
+
+      
+}
+}
+
+-----------------------
+different code 
+t
+==
+import java.util.*;
+
+public class Main
+{
+  
+public static void main (String[]args)
+  {
+	
+Scanner sc = new Scanner (System .in);
+        
+     
+         System.out.println("enter the value of char");
+        char e = sc.next().charAt(0);
+        System.out.println(e);
+
+      
+}
+}
+-----------------------------
+different code 
+29 
+==
+import java.util.*;
+
+public class Main
+{
+  
+public static void main (String[]args)
+  {
+	
+Scanner sc = new Scanner (System .in);
+        
+     
+     
+        System.out.println("enter the value of integer");
+        int b =sc.nextInt();
+        System.out.println(b);
+
+
+      
+}
+}
+
+-----------------------------------------

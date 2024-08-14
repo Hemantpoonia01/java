@@ -1,0 +1,311 @@
+no return and no argument :
+
+1)
+class A 
+even even method call ho (1--->100 even number)
+odd odd method call (check odd number ) 
+palindrome (palindrome)
+reverse (check reverse) 
+Armstrong (Armstrong)
+add (two number addition )
+sub (two number substraction)
+multi (two number multiply )
+
+class Main 
+main() :access 
+===
+import java.util.*;
+
+class A {
+    void add() {
+        int a = 3, b = 2, c;
+        c = a + b;
+        System.out.println(c);
+    }
+
+    void multi() {
+        int a = 5, b = 2, c;
+        c = a * b;
+        System.out.println(c);
+    }
+    void sub(){
+        int a = 5, b = 2, c;
+        c = a - b;
+        System.out.println(c);
+    }
+    void even(){
+        for (int i = 1 ; i <= 100; i++) {
+            if(i%2==0){
+                
+            System.out.print(i + " ");}
+        }
+    }
+    void odd(){
+        for (int i = 1 ; i <= 100; i++) {
+            if(i%2==1){
+                
+            System.out.print(i + " ");}
+        }
+    }
+    void armstrong(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("ENTER DIGIT");
+        int num=sc.nextInt();
+	   	     
+        int temp = num;
+        int  sum = 0;
+        for (int rem;num > 0;) {
+            rem = num % 10;
+            sum = sum + rem * rem * rem;
+            num = num / 10;
+        }
+        if (temp == sum) {
+            System.out.println("Armstrong Number");
+        } else {
+            System.out.println("Not");
+        }
+    }
+    void reverse(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("ENTER DIGIT");
+        int num=sc.nextInt();
+        int sum = 0;
+        for(int rem,e ;num > 0;){
+            rem = num % 10;
+            sum = sum  *10+rem;
+            num = num / 10;
+            
+        }
+          System.out.println("reversed number = "+sum);
+    }
+    
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter add or multi or odd or even or sub or reverse or armstrong");
+        String name = sc.next();
+        if (name.equals("add")) {
+            A p = new A();
+            p.add();
+        } else if (name.equals("multi")) {
+            A p = new A();
+            p.multi();
+        }
+        else if (name.equals("armstrong")) {
+            A p = new A();
+            p.armstrong();
+        }
+        else if (name.equals("sub")) {
+            A p = new A();
+            p.sub();
+        }
+        else if (name.equals("even")) {
+            A p = new A();
+            p.even();
+        }
+        else if (name.equals("odd")) {
+            A p = new A();
+            p.odd();
+        }
+        else if (name.equals("reverse")) {
+            A p = new A();
+            p.reverse();
+        }else {
+            System.out.println("input mismatch");
+        }
+    }
+}
+
+2)no return and no argument :
+ 
+class Main :
+add() :two number addition
+sub() :two number subs
+div() :two number div
+multi() :two number multiplication
+mod() :two number modular 
+
+main() :
+all method call 
+==
+import java.util.*;
+
+
+
+public class Main {
+      void add() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the value of a ");
+        int a = sc.nextInt();
+        System.out.println("enter the value of b ");
+        int b = sc.nextInt();
+        int c = a + b;
+        System.out.println(c);
+    }
+ void substract(){
+        Scanner sc = new Scanner (System.in);
+        System.out.println("enter the value of a");
+        int a=sc.nextInt();
+        System.out.println("enter the value of b");
+        int b=sc.nextInt();
+        int c=a-b;
+        System.out.println(c);
+    }
+ void multiply(){
+        Scanner sc = new Scanner (System.in);
+        System.out.println("enter the value of a");
+        int a=sc.nextInt();
+        System.out.println("enter the value of b");
+        int b=sc.nextInt();
+        int c=a*b;
+        System.out.println(c);
+    } 
+ void divide(){
+        Scanner sc = new Scanner (System.in);
+        System.out.println("enter the value of a");
+        int a=sc.nextInt();
+        System.out.println("enter the value of b");
+        int b=sc.nextInt();
+        int c=a/b;
+        System.out.println(c);
+    } 
+   void modulas(){
+        Scanner sc = new Scanner (System.in);
+        System.out.println("enter the value of a");
+        int a=sc.nextInt();
+        System.out.println("enter the value of b");
+        int b=sc.nextInt();
+        int c=a%b;
+        System.out.println(c);
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter add or multiply or divide or substract  or modulas");
+        String name = sc.next();
+        if (name.equals("add")) {
+            Main p = new Main();
+            p.add();
+        } else if (name.equals("multiply")) {
+            Main p = new Main();
+            p.multiply();
+        }
+        else if (name.equals("divide")) {
+            Main p = new Main();
+            p.divide();
+        }
+        else if (name.equals("substract")) {
+            Main p = new Main();
+            p.substract();
+        }
+        else if (name.equals("modulas")) {
+            Main p = new Main();
+            p.modulas();
+        }
+       
+        else {
+            System.out.println("input mismatch");
+        }
+    }
+}
+
+3)no return and no argument :
+
+class A :
+add() :two number addition
+sub() :two number subs
+div() :two number div
+multi() :two number multiplication
+mod() :two number modular 
+
+class Main :
+main() :
+all method call 
+==
+
+import java.util.*;
+
+class A{
+     void add() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the value of a ");
+        int a = sc.nextInt();
+        System.out.println("enter the value of b ");
+        int b = sc.nextInt();
+        int c = a + b;
+        System.out.println(c);
+    }
+ void substract(){
+        Scanner sc = new Scanner (System.in);
+        System.out.println("enter the value of a");
+        int a=sc.nextInt();
+        System.out.println("enter the value of b");
+        int b=sc.nextInt();
+        int c=a-b;
+        System.out.println(c);
+    }
+ void multiply(){
+        Scanner sc = new Scanner (System.in);
+        System.out.println("enter the value of a");
+        int a=sc.nextInt();
+        System.out.println("enter the value of b");
+        int b=sc.nextInt();
+        int c=a*b;
+        System.out.println(c);
+    } 
+ void divide(){
+        Scanner sc = new Scanner (System.in);
+        System.out.println("enter the value of a");
+        int a=sc.nextInt();
+        System.out.println("enter the value of b");
+        int b=sc.nextInt();
+        int c=a/b;
+        System.out.println(c);
+    } 
+   void modulas(){
+        Scanner sc = new Scanner (System.in);
+        System.out.println("enter the value of a");
+        int a=sc.nextInt();
+        System.out.println("enter the value of b");
+        int b=sc.nextInt();
+        int c=a%b;
+        System.out.println(c);
+    }
+}
+
+public class Main {
+     
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter add or multiply or divide or substract  or modulas");
+        String name = sc.next();
+        if (name.equals("add")) {
+            A p = new A();
+            p.add();
+        } else if (name.equals("multiply")) {
+            A p = new A();
+            p.multiply();
+        }
+        else if (name.equals("divide")) {
+            A p = new A();
+            p.divide();
+        }
+        else if (name.equals("substract")) {
+            A p = new A();
+            p.substract();
+        }
+        else if (name.equals("modulas")) {
+            A p = new A();
+            p.modulas();
+        }
+       
+        else {
+            System.out.println("input mismatch");
+        }
+    }
+}
+
+

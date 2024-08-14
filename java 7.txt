@@ -1,0 +1,380 @@
+-----------
+while : 
+reverse number 
+657
+==
+aaaaaaaaac
+756 
+==
+public class Main {
+
+    public static void main(String[] args) {
+        int num = 756 ;
+        
+        int rem, sum = 0;
+        while (num > 0) {
+            rem = num % 10;
+            sum = sum  *10+rem;
+            num = num / 10;
+        }
+        
+            System.out.println("reversed number = "+sum);
+       
+}
+}
+
+---------------------------------
+pallindrome number 
+12321 
+==
+public class Main {
+
+    public static void main(String[] args) {
+        int num = 12321;
+        int temp = num;
+        int rem, sum = 0;
+        while (num > 0) {
+            rem = num % 10;
+            sum = sum  *10+rem;
+            num = num / 10;
+        }
+        if (temp == sum) {
+            System.out.println("pallindome number");
+        } else {
+            System.out.println("Not");
+        }
+    }
+}
+-------------
+armstrong number 
+153 
+==public class Main {
+
+    public static void main(String[] args) {
+        int num = 153;
+        int temp = num;
+        int rem, sum = 0;
+        while (num > 0) {
+            rem = num % 10;
+            sum = sum + rem * rem * rem;
+            num = num / 10;
+        }
+        if (temp == sum) {
+            System.out.println("Armstrong Number");
+        } else {
+            System.out.println("Not");
+        }
+    }
+}
+----------
+neon number 
+9 ka square 
+81 => 8+1=(9) 
+==
+public class Main {
+
+    public static void main(String[] args) {
+        int a=9;
+        int num = a*a;
+        int temp = num;
+        int rem, sum = 0;
+        while (num > 0) {
+            rem = num % 10;
+            sum = sum +rem;
+            num = num / 10;
+        }
+        if (a== sum) {
+            System.out.println("neon number");
+        } else {
+            System.out.println("Not");
+        }
+    }
+}
+------------------
+prime number
+a)check number prime 
+b)1--->100 prime number 
+==
+-------------------------
+factorial 
+5 
+1*2*3*4*5
+==public class Main{
+ public static void main(String args[]){  
+  int i,fact=1;  
+  int number=5;   
+  for(i=1;i<=number;i++){    
+      fact=fact*i;    
+  }    
+  System.out.println("Factorial  is: "+fact);    
+ }
+}
+-------------------------------------------
+fibonacci series 
+0 1 1 2 3 5 
+==
+public class Main{
+  public static void main(String args[]){  
+ int n1=0,n2=1,n3,i,count=10;  
+ System.out.print(n1+" "+n2);  
+  
+ for(i=2;i<count;++i)
+ {  
+  n3=n1+n2;  
+  System.out.print(" "+n3);  
+  n1=n2;  
+  n2=n3;  
+ }  
+
+}}
+--------------------------------------
+use input :6743 =>4 digit 
+==
+public class Main {
+
+    public static void main(String[] args) {
+        int num = 6743 ;
+        
+        int count = 0;
+        while (num > 0) {
+           count++;
+            num = num / 10;
+        }
+        
+            System.out.println("count = "+count);
+       
+}
+}
+
+
+--------------------------------------
+user : 342 => 354 
+==
+public class Main {
+
+    public static void main(String[] args) {
+        int num = 342 ;
+        
+        int rem, sum = 0;
+        while (num > 0) {
+            rem = num % 10;
+            sum = sum  *10+rem+1;
+            num = num / 10;
+        }
+        
+            System.out.println("reversed number = "+sum);
+       
+}
+}
+
+
+-------------------------------------
+user: 342 =>453 
+==
+public class Main {
+
+    public static void main(String[] args) {
+        int num = 342 ;
+        
+        int rem, sum = 0;
+        while (num > 0) {
+            rem = num % 10;
+            sum = sum  *10+rem;
+            num = num / 10;
+        }
+        int we,rv=0;
+        while (sum > 0) {
+            we = sum % 10;
+            rv = rv  *10+we+1;
+            sum = sum / 10;
+        }
+        
+            System.out.println("reversed number = "+rv);
+       
+}
+}
+
+ type 
+----------------------------------
+
+even number 
+type1 : 1-->100 
+type2 : 1--->100 even number ka sum 
+type3 : random value 34--->89 =>even number 
+type4 : randome value k sabi ka sum aa jaye 
+
+odd number 
+type1: 1-->100 odd numbers 
+type2: 1--100 odd number ka sum 
+type3 : random value 34--->89 =>odd number 
+type4 : randome value k sabi ka sum aa jaye 
+==import java.util.*;
+public class Main{
+    public static void main (String[] args) {
+        Scanner sc=new Scanner (System.in);
+        System.out.print("enter digit");
+        int a=sc.nextInt();
+      
+            if(a%2==0){
+            System.out.print( " even number type1  1--100 type2  1--->100 even number ka sum type3 : random value 34--->89 =>even number type4 : randome value k sabi ka sum aa jaye "+a);
+            int x=sc.nextInt();
+             if (x==1){ 
+                  int b=1;
+                  while(b<=100){
+                  System.out.print( " "+b);
+                    b++;
+
+            }
+             }
+            else if(x==2){
+                int b=1;
+                int sum=0;
+                 while(b<=100){
+                  if(b%2==0){
+                sum=sum+b;
+            System.out.print( " "+sum);}
+            b++; 
+            }
+            }
+             else if(x==3){
+                          System.out.print("enter starting and ending points");
+              int b=sc.nextInt();
+              int c=sc.nextInt();
+        
+              while(b<=c){
+            if(b%2==0){
+            System.out.print( " "+b);}
+            b++;
+               }
+
+            }
+             else if(x==4){
+                  System.out.print("enter starting and ending points");
+                    int c=sc.nextInt();
+                     int b=sc.nextInt();
+                    int sum=0;
+        
+                          while(c<=b){
+                              sum=sum+c;
+                                  c++;
+                               System.out.print( " "+sum);}
+            
+            }
+            }
+            
+            else if(a%2==1){
+                
+             System.out.print( "odd number type1: 1-->100 odd numbers type2: 1--100 odd number ka sum type3 : random value 34--->89 =>odd number type4 : randome value k sabi ka sum aa jaye "+a);
+            int x=sc.nextInt();
+               if (x==1){
+                  int b=1;
+               while(b<=100){
+            System.out.print( " "+b);
+            b++;
+  
+            }
+               }
+            else if(x==2){
+               int b=1;
+                int sum=0;
+                 while(b<=100){
+                  if(b%2==1){
+                sum=sum+b;
+            System.out.print( " "+sum);}
+            b++; 
+            }
+            }
+            
+             else if(x==3){
+                          System.out.print("enter starting and ending points");
+              int b=sc.nextInt();
+              int c=sc.nextInt();
+        
+              while(b<=c){
+            if(b%2==1){
+            System.out.print( " "+b);}
+            b++;
+               }
+            }
+             else if(x==4){
+                System.out.print("enter starting and ending points");
+        int c=sc.nextInt();
+        int b=sc.nextInt();
+        int sum=0;
+        
+        while(c<=b){
+            sum=sum+c;
+            c++;
+            System.out.print( " "+sum);}
+            
+            }  
+            
+            
+            
+        
+    }
+}
+}
+
+
+----------------------------------------------------------------------------------------------
+perfect number : 
+6 
+1 2 3 
+1 + 2 + 3 => 6 
+==public class Main {
+
+    public static void main(String[] args) {
+        int a=1;
+        int num = 6;
+        
+        int sum = 0;
+        while (a <= num) {
+           
+        if(num % a  == 0){
+            sum= sum +  a;
+            a++;
+
+        }
+           }
+        if (sum == num) {
+            System.out.println("Perfect Number");
+        } else {
+            System.out.println("Not");
+        }
+    }
+}
+
+
+
+
+--------------------------------------------------------------------------------------------
+neon number : 
+
+9 =>81 
+8+1 =>9 
+
+9 is neon number
+===public class Main {
+
+    public static void main(String[] args) {
+        int a=9;
+        int num = a*a;
+        int temp = num;
+        int rem, sum = 0;
+        while (num > 0) {
+            rem = num % 10;
+            sum = sum +rem;
+            num = num / 10;
+        }
+        if (a== sum) {
+            System.out.println("neon number");
+        } else {
+            System.out.println("Not");
+        }
+    }
+}
+
+
+--------------------------------------------------------------------------------------------------
+
