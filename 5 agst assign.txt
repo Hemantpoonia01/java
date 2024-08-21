@@ -1,0 +1,40 @@
+nested static 
+1)outer class non static and inner class static and method  static : 
+
+2)outer class non  static and inner class non static and method  static : 
+
+3)outer class  non static and inner class static and method  non static : 
+
+4)outer class  non static and inner class static and method  non static :
+
+5)
+class A 
+	static class B static method 
+	static class C static method 
+
+6)outer class  non static and inner class static and method  non static and instance variable static 
+
+
+7)
+outer class  non static and inner class static and method  non static and instance variable non static 
+
+8)
+outer class  non static and inner class non static and method  non static and instance variable non static 
+
+9)
+class A 
+	non static class B non static method 
+	non static class C static method 
+
+10)
+class A 
+	static class B static method and instance variable non static 
+
+	static class C static method and instance variable non static 
+
+11)
+class A 
+	static class B static method and instance variable  static 
+
+	static class C static method and instance variable  static 
+--------------------------------------------------------------------
