@@ -1,0 +1,222 @@
+1)
+Write a Java program to find power of any number x ^ y.
+===
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    System.out.println("enter number whose power u want to calculate");
+	    int num=sc.nextInt();
+	    num=num*num;
+	    System.out.println(num);
+		
+	}
+}
+
+2)
+Write a Java program to input marks of five subjects Physics, Chemistry, Biology,
+Mathematics and Computer. Calculate percentage and grade according to
+following:
+Percentage >= 90% : Grade A
+Percentage >= 80% : Grade B
+Percentage >= 70% : Grade C
+Percentage >= 60% : Grade D
+Percentage >= 40% : Grade E
+Percentage < 40% : Grade F
+==
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter marks of Physics, Chemistry, Biology,Mathematics and Computer ");
+		int num1=sc.nextInt();
+		int num2=sc.nextInt();
+		int num3=sc.nextInt();
+		int num4=sc.nextInt();
+		int num5=sc.nextInt();
+
+		int sum=num1+ num2+num3+num4+num5;
+		int per=100*sum;
+		int per2=per/500;
+		if(per2>=90) {
+			System.out.println("Grade A");
+		}
+		else if(per2>=80) {
+			System.out.println("Grade B ");
+		}
+		else if(per2>=70) {
+			System.out.println("Grade C ");
+		}
+		else if(per2>=60) {
+			System.out.println("Grade D");
+		}
+		else if(per2>=40) {
+			System.out.println("Grade E");
+		}
+		else if(per2<=39) {
+			System.out.println("Grade F");
+		}
+	}
+}
+
+
+3)
+Write a Java  program to print all natural numbers in reverse (from n to 1). - using
+while loop
+==
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter last natural number ");
+		int num1=sc.nextInt();
+		
+		while(num1>=1){
+		    num1--;
+		    System.out.println(num1);
+		}
+	
+	}
+}
+
+
+4)
+Write a Java program to print all alphabets from a to z. - using while loop
+===
+public class Main
+{
+	public static void main(String[] args) {
+	
+		char first='a';
+		
+		while(first<='z'){
+		    System.out.println(first);
+		    first++;
+		    
+		}
+	
+	}
+}
+
+5)
+Write a Java program to find sum of first and last digit of a number.
+==
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter  number ");
+		int num=sc.nextInt();
+		int sum;
+		int num2=num%10;
+		int num1=num;
+		while(num1>=10){
+		    num1=num1/10;
+		}
+		sum=num2+num1;
+		System.out.println(sum);
+
+		
+	
+	}
+}
+
+6)
+Write a Java program to calculate product of digits of a number
+==
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter  number ");
+		int num=sc.nextInt();
+		int rem;
+		int product=1;
+		while(num>0){
+		    rem=num%10;
+		    product = product *rem;
+		    num=num/10;
+		    
+		}
+
+		System.out.println(product);
+	
+	}
+}
+
+
+7)
+Write a Java program to print all Prime numbers between 1 to n
+===
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter  digits ");
+		int num2=sc.nextInt();
+  for (int i=1;i<=num2;i++){
+  int count =0;
+  for (int j=2;j<i;j++){
+    if(i%j==0){
+        count++;
+    }
+ 
+  }
+  if(count==0){
+      System.out.println(i+" ");
+  }
+  else{
+      count++;
+  }
+  
+  }
+	
+	}
+}
+
+8)
+Write a Java program to print Fibonacci series up to n terms
+===
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter  digits ");
+		int num2=sc.nextInt();
+    int n1=0;
+    int n2=1;
+    int n3,i;
+    
+    System.out.println(n1+" "+n2);
+    for(i=2;i<num2;i++){
+        n3=n1+n2;
+        System.out.println(" "+n3);
+        n1=n2;
+        n2=n3;
+    }
+
+	
+	}
+}
+
+
+
+9)
+Write a Java program that accepts two item’s weight (floating points' values ) and number of purchase (floating points' values) and calculate the average value of the items.  
+Test Data :
+Weight - Item1: 15
+No. of item1: 5
+Weight - Item2: 25
+No. of item2: 4
+Expected Output:
+Average Value = 19.444444
+
+10)
+print floy'ds triangle in java 
