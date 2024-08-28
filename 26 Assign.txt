@@ -1,0 +1,35 @@
+all primitive data type used :store homogenous data 
+
+-----------------------------------------------------
+var used : 
+
+Object class : 
+
+String 
+
+all wrapper class used : 
+-----------------------------------------------------
+====
+public class Main
+{
+	public static void main(String[] args) {
+		int a[]={1,2,3,4,5};
+		short b[]={3,5,3,4,3};
+		float c[]={4.5f,45.5f,5.5f};
+		double d[]={3.3,4.5,455.7};
+		long e[]={3,4,2,3,5};
+		String f[]={"sfs","sfsf","ffff","dfgsr"};
+		boolean g[]={true,false,false};
+		char h[]={'g','u','i','p'};
+		Object i[]={4,6,"rss",'e'};
+		System.out.println(a[4]);
+		System.out.println(b[3]);
+		System.out.println(c[2]);
+		System.out.println(d[2]);
+		System.out.println(e[2]);
+		System.out.println(f[2]);
+		System.out.println(g[2]);
+		System.out.println(h[2]);
+		System.out.println(i[2]);
+	}
+}
