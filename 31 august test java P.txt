@@ -1,0 +1,291 @@
+1)
+1
+3 5
+7 11 13
+17 19 23
+===
+
+
+2)
+1
+1 2
+3 5 8
+13 21 34
+
+3)
+Create an abstract class Shape with an abstract method calculateArea(). Create two subclasses, Circle and Rectangle, that extend the Shape class and provide implementations for the calculateArea() method.
+===
+abstract class Shape{
+    abstract void calculatearea();
+}
+class Circle extends Shape{
+    void calculatearea(){
+       int a= 45*45;
+       float b=3.14f;
+       float area=b*a;
+       System.out.println(area);
+    }
+}
+class Rectangle extends Shape{
+    void calculatearea(){
+      int a=20;
+      int b=10;
+      int arear=a*b;
+      System.out.println(arear);
+    }
+}
+public class Main
+{
+	public static void main(String[] args) {
+	Circle p= new Circle();
+	p.calculatearea();
+	Rectangle l=new Rectangle();
+	l.calculatearea();
+	}
+}
+
+
+4)
+Define an abstract class Vehicle with an abstract method start(). Create three subclasses, Car, Bicycle, and Boat, that extend the Vehicle class and implement the start() method differently.
+===
+abstract class Vehicle{
+    abstract void start();
+}
+class Car extends Vehicle{
+    void start(){
+       int a= 45*45;
+       float b=3.14f;
+       float area=b*a;
+       System.out.println(area);
+    }
+}
+class Bicycle extends Vehicle{
+    void start(){
+      int a=20;
+      int b=10;
+      int arear=a*b;
+      System.out.println(arear);
+    }
+}
+class Boat extends Vehicle{
+    void start(){
+      System.out.println("gheloifjhgs");  
+    }
+}
+public class Main
+{
+	public static void main(String[] args) {
+	Car p= new Car();
+	p.start();
+	Bicycle l=new Bicycle();
+	l.start();
+	Boat y=new Boat();
+	y.start();
+	}
+}
+
+5)
+Employee Salary Calculator (Interface Implementation)
+Problem Statement:
+You are required to implement an interface Payable with a method getPaymentAmount(). Create two classes SalariedEmployee and HourlyEmployee that implement the Payable interface.
+
+The SalariedEmployee class should have attributes name and monthlySalary.
+The HourlyEmployee class should have attributes name, hoursWorked, and hourlyRate.
+Input Format:
+
+First line: Number of employees.
+For each employee:
+First, input the type of employee (SalariedEmployee or HourlyEmployee).
+Then input the respective attributes.
+Output Format:
+
+Output the payment amount for each employee on a new line.
+
+6)
+Student Record Management (Encapsulation)
+Problem Statement:
+Implement a class Student with the following attributes:
+
+name: String
+age: int
+marks: int
+Provide appropriate getter and setter methods for each attribute. Write a program that takes input for multiple students and prints their details.
+Input Format:
+
+First line: Number of students.
+For each student:
+Input the name, age, and marks.
+Output Format:
+
+Output the details of each student in the format: "Name: <name>, Age: <age>, Marks: <marks>".
+===
+import java.util.*;
+class Student{
+    private String name;
+    private int age;
+    private int marks;
+    void setA(String name,int age,int marks){
+        this.name=name;
+        this.age=age;
+        this.marks=marks;
+        
+    }
+    String getA1(){
+        return name;
+    }
+    int getA2(){
+        return age;
+    }
+    int getA3(){
+        return marks;
+    }
+}
+
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    System.out.println("enter name ");
+	    String a=sc.next();
+	    System.out.println(" enter age");
+	    int b=sc.nextInt();
+	    System.out.println("enter marks");
+	    int c=sc.nextInt();
+	    System.out.println("Total number of Student = 60");
+	    
+	    Student p=new Student();
+	    p.setA(a,b,c );
+        System.out.println(p.getA1());
+        System.out.println(p.getA2()); 
+        System.out.println(p.getA3());
+	
+}
+}
+
+7)
+ Book Details Management (Constructor Overloading)
+Problem Statement:
+Create a class Book with the following attributes:
+
+title: String
+author: String
+price: double
+Implement constructor overloading to initialize a Book object in the following ways:
+
+With all attributes (title, author, price).
+With only title and author, where price defaults to 0.0.
+With only title, where author defaults to "Unknown" and price to 0.0.
+Write a program that creates multiple Book objects and prints their details.
+
+Input Format:
+
+First line: Number of books.
+For each book:
+Input the available attributes (title, author, and/or price).
+Output Format:
+
+Output the details of each book in the format: "Title: <title>, Author: <author>, Price: <price>".
+
+8)
+Create an abstract class Employee with data members name and employeeID. Define an abstract method calculateSalary(). Create two subclasses, Manager and Worker, that extend the Employee class and implement the calculateSalary() method differently.
+===
+import java.util.*;
+abstract class Employee{
+     
+    abstract void calculateSalary();
+    
+}
+class Manager extends Employee{
+    void calculateSalary(){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Name of managerrrr ");
+       String name = sc.next();
+       System.out.println("Id plezzzzzzz");
+       int employeeID = sc.nextInt(); 
+       int salary=6000;
+       System.out.println("name = "+name);
+       System.out.println("employeeID = "+employeeID);
+       System.out.println("salary = "+salary);
+    }
+}
+class Worker extends Employee{
+    void calculateSalary(){
+       Scanner sc=new Scanner(System.in);
+        System.out.println("Name of Employeeeee ");
+       String name = sc.next();
+       System.out.println("Id plezzzzzzz");
+       int employeeID = sc.nextInt(); 
+       int salary=4000;
+       System.out.println("name = "+name);
+       System.out.println("employeeID = "+employeeID);
+       System.out.println("salary = "+salary);
+    }
+}
+public class Main
+{
+	public static void main(String[] args) {
+	Manager l=new Manager();
+	l.calculateSalary();
+	Worker p=new Worker();
+	p.calculateSalary();
+}
+}
+
+9)
+Define an abstract class Bird with an abstract method fly(). Create two subclasses, Eagle and Penguin, that extend the Bird class. The Eagle can fly, but the Penguin cannot. Implement the fly() method accordingly.
+===
+import java.util.*;
+abstract class Bird{
+     
+    abstract void fly();
+    
+}
+class Eagle extends Bird{
+    void fly(){
+        System.out.println("Eagle can fly");
+    }
+}
+class Penguin extends Bird{
+    void fly(){
+       System.out.println("Penguin cannot fly");
+    }
+}
+public class Main
+{
+	public static void main(String[] args) {
+	Eagle l=new Eagle();
+	l.fly();
+	Penguin p=new Penguin();
+	p.fly();
+}
+}
+
+10)
+Create an abstract class Animal with abstract methods eat() and sleep(). Create a subclass Lion that extends Animal and provides implementations for both methods.
+
+=-==
+import java.util.*;
+abstract class Animal{
+     
+    abstract void eat();
+    abstract void sleep();
+    
+}
+class Lion extends Animal{
+    void eat(){
+        System.out.println(" eats flesh");
+    }
+    void sleep(){
+        System.out.println("sleep grrrrrrr");
+    }
+}
+
+public class Main
+{
+	public static void main(String[] args) {
+	Lion l=new Lion();
+	l.eat();
+	l.sleep();
+	
+}
+}
