@@ -1,0 +1,229 @@
+1)
+user input array 0 and 1 
+0,1,,1,1,0,0,1,0,1 
+
+zero then one 
+one then zero 
+====
+public class Main {
+    public static void display(int a[]) {
+        for (int i = 0; i < a.length; i++) {
+            System.out.print(a[i] + " ");
+        }
+    }
+
+    public static void Zero(int a[]) {
+       
+        int n = a.length;
+        
+        int count = 0;
+        for (int i = 0; i < n; i++) {
+            if (a[i] == 0) {
+                count++;
+            }
+        }
+        for (int i = 0; i < n; i++) {
+            if (i < count) {
+                a[i] = 0;
+            } else {
+                a[i] = 1;
+            }
+        }
+        display(a);
+    }
+    public static void One(int a[]) {
+       
+        int n = a.length;
+        
+        int count = 0;
+        for (int i = 0; i < n; i++) {
+            if (a[i] == 1) {
+                count++;
+            }
+        }
+        for (int i = 0; i < n; i++) {
+            if (i < count) {
+                a[i] = 1;
+            } else {
+                a[i] = 0;
+            }
+        }
+        display(a);
+    }
+
+    public static void main(String[] args) {
+        int a[] = { 0, 1, 0, 1, 0, 1, 1, 0, 1 };
+        Zero(a);
+        System.out.println(" ");
+        One(a);
+    }
+}
+2)
+user input array :1,2,3,4,5,6,7,8,9,10
+search :6 linear search 
+===
+import java.util.Scanner;
+public class Main {
+    static void searchElement(int a[]){
+        Scanner sc= new Scanner(System.in);
+        System.out.print("Search: ");
+        int target= sc.nextInt();
+        for(int i=0; i<a.length; i++){
+            if(a[i]==target){
+                System.out.print("Found at index ");
+                break;
+            }
+        }
+        for(int i=0; i<a.length; i++){
+            if(a[i]==target){
+                System.out.print(i + " ");
+            }
+        }
+    }
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+
+        
+        int size= 10;
+
+        int arr[]= new int[size];
+        System.out.print("Enter array elements: ");
+        for(int i=0; i<arr.length; i++){
+            arr[i]= sc.nextInt();
+        }
+
+        searchElement(arr);
+    }
+}
+
+3)
+user input array :1,2,3,4,5,6,7,8,9,10
+search :6 binary search 
+===
+import java.util.*;
+public class Main {
+    static void searchElement(int a[]){
+        Scanner sc= new Scanner(System.in);
+        System.out.print("Search: ");
+        int target= sc.nextInt();
+        int li= 0;
+        int hi= a.length-1;
+        int mid= (li+hi)/2;
+        while(li<=hi){
+            if(a[mid]==target){
+                System.out.println(mid);
+                break;
+            }
+            else if(a[mid]<target){
+                li=mid+1;
+            }
+            else if(a[mid]>target){
+                hi=mid-1;
+            }
+            mid= (li+hi)/2;
+        }
+    }
+
+    static void display(int a[]){
+        for(int i=0; i<a.length; i++){
+            System.out.print(a[i] + " ");
+        }
+    }
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+         int size= 10;
+         int arr[]= new int[size];
+        System.out.print("Enter array elements: ");
+        for(int i=0; i<arr.length; i++){
+            arr[i]= sc.nextInt();
+        }
+
+        Arrays.sort(arr);
+        display(arr);
+        System.out.println();
+        searchElement(arr);
+    }
+}
+	
+
+4)
+user input array :
+sort 
+first Armstrong swap last Armstrong 
+====
+import java.util.*;
+public class Main {
+    
+
+    
+    static void armstrong(int a[]){
+        for(int i=0; i<a.length; i++){
+            int sum=0, rem=0;
+            int a1=a[i];
+            while(a[i]>0){
+                rem= a[i]%10;
+                sum= sum+ rem*rem*rem;
+                a[i]= a[i]/10;
+            }
+
+            if(sum==a1){
+                System.out.println(sum+"arm....");
+            }
+        }
+    }
+   
+    public static void main(String args[]){
+        Scanner sc= new Scanner(System.in);
+        int size= 10;
+        int arr[]= new int[size];
+        System.out.print("Enter array elements: ");
+        for(int i=0; i<size; i++){
+            arr[i]= sc.nextInt();
+        }
+        armstrong(arr);
+    }
+}
+5)
+user input array :
+number four digit :
+	palindrome check 
+==
+import java.util.Scanner;
+public class Main {
+
+    
+    static void palindrome(int a[]){
+        for(int i=0; i<a.length&&a[i]>999&&a[i]<10000; i++){
+            int sum=0, rem=0;
+            int a1=a[i];
+            while(a[i]>0){
+                rem= a[i]%10;
+                sum= sum*10 +rem;
+                a[i]= a[i]/10;
+            }
+
+            if(sum==a1){
+                System.out.println(sum);
+            }
+        }
+    }
+    public static void main(String args[]){
+        Scanner sc= new Scanner(System.in);
+
+        
+        int size= 5;
+        int arr[]= new int[size];
+        System.out.print("Enter array elements of four digits: ");
+        for(int i=0; i<size; i++){
+            arr[i]= sc.nextInt();
+        }
+        palindrome(arr);
+    }
+}
+
+6)
+input :1,2,3,4,5,6,7,8,9,10
+	triplet pairs target sum 6 
+	count 
+	index
+	pairs 
