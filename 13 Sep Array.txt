@@ -1,0 +1,129 @@
+1)user input array 0 and 1 
+0,1,,1,1,0,0,1,0,1 
+
+zero then one 
+
+public class Main {
+    public static void display(int a[]) {
+        for (int i = 0; i < a.length; i++) {
+            System.out.print(a[i] + " ");
+        }
+    }
+
+    public static void SortZero(int a[]) {
+        //{ 0, 1, 0, 1, 0, 1, 1, 0, 1 };
+        // length
+        int n = a.length;
+        // count zero :
+        int count = 0;
+        for (int i = 0; i < n; i++) {
+            if (a[i] == 0) {
+                count++;
+            }
+        }
+        for (int i = 0; i < n; i++) {
+            if (i < count) {
+                a[i] = 0;
+            } else {
+                a[i] = 1;
+            }
+        }
+        display(a);
+    }
+
+    public static void main(String[] args) {
+        int a[] = { 0, 1, 0, 1, 0, 1, 1, 0, 1 };
+        SortZero(a);
+    }
+}
+
+
+----------------------------------------------------------
+
+one then zero 
+
+public class Main {
+    public static void display(int a[]) {
+        for (int i = 0; i < a.length; i++) {
+            System.out.print(a[i] + " ");
+        }
+    }
+
+    public static void SortZero(int a[]) {
+        //{ 0, 1, 0, 1, 0, 1, 1, 0, 1 };
+        // length
+        int n = a.length;
+        // count zero :
+        int count = 0;
+        for (int i = 0; i < n; i++) {
+            if (a[i] == 1) {
+                count++;
+            }
+        }
+        for (int i = 0; i < n; i++) {
+            if (i < count) {
+                a[i] = 1;
+            } else {
+                a[i] = 0;
+            }
+        }
+        display(a);
+    }
+
+    public static void main(String[] args) {
+        int a[] = { 0, 1, 0, 1, 0, 1, 1, 0, 1 };
+        SortZero(a);
+    }
+}
+----------------------------------------------------------------
+
+2)
+user input :
+0,1,2 
+
+out put
+
+2 ,1 0 
+
+import java.util.*;
+
+public class ArrayShort3 {
+    public static void display(int a[]) {
+        for (int i = 0; i < a.length; i++) {
+            System.out.print(a[i] + " ");
+        }
+        System.out.println();
+    }
+    public static void shortArray(int a[]) {
+        for (int i =a.length-1; i >=0; i--) {
+            
+        System.out.print(a[i]+" ");
+    }
+}
+
+     public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the size of array: ");
+        int size = sc.nextInt();
+        int a[] = new int[size];
+
+        // Get array elements from user
+        System.out.println("Enter " + size + " elements:");
+        for (int i = 0; i < size; i++) {
+            a[i] = sc.nextInt();
+        }
+
+        // Display array elements
+        System.out.println("Array elements:");
+        display(a);
+
+
+        System.out.println("after the swap elements ");
+        shortArray(a);
+    }
+}
+
+
+
+
+

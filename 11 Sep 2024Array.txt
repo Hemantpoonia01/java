@@ -1,0 +1,37 @@
+1)searching :linear search 
+		binary search 
+
+2)
+array user input 
+	duplicate element find 
+		no return and argument 
+		return and argument 
+		count 
+		first and last 
+		index
+
+	duplicate element remove (unique element )
+	no return and argument 
+	return and argument 
+		count 
+		first and last 
+		index
+
+
+	find duplicate and remove duplicate 
+	no return and argument 
+	return and argument 
+		count 
+		first and last 
+		index
+------------------------------------------------------------------
+user input array :
+sort 
+first even swap last even number
+first Armstrong swap last Armstrong 
+first prime swap last prime number  
+------------------------------------------------------------------
+user input array :
+number four digit :
+	palindrome check 
+-------------------------------------------------------------------
